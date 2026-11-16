@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07121d">
+<title>Farmacia Stork · 14 de Julio 4045, Bahía Blanca</title>
+<meta name="description" content="Farmacia Stork, en 14 de Julio 4045, Bahía Blanca. Lunes a viernes de 8:30 a 21 h y sábados de 9 a 13 h. Teléfono, cómo llegar y tienda online.">
+<meta property="og:title" content="Farmacia Stork · 14 de Julio 4045, Bahía Blanca">
+<meta property="og:description" content="Farmacia Stork, en 14 de Julio 4045, Bahía Blanca. Lunes a viernes de 8:30 a 21 h y sábados de 9 a 13 h. Teléfono, cómo llegar y tienda online.">
+<meta property="og:locale" content="es_AR">
+<meta name="robots" content="noindex, nofollow">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Pharmacy","name":"Farmacia Stork","telephone":"+542914234349","address":{"@type":"PostalAddress","streetAddress":"14 de Julio 4045","addressLocality":"Bahía Blanca","addressRegion":"Buenos Aires","postalCode":"8000","addressCountry":"AR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"13:00"}],"geo":{"@type":"GeoCoordinates","latitude":-38.6994266,"longitude":-62.211879}}</script>
+<style>
+@font-face{font-family:"Stork Display";src:url(assets/display-light.woff) format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"Stork Text";src:url(assets/text-regular.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Stork Text";src:url(assets/text-semibold.woff) format("woff");font-weight:600;font-display:swap}
+:root{
+  --noche:#07121d;--noche-2:#0d2233;--neon:#8ff5e6;--neon-halo:rgba(64,224,208,.55);
+  --sala:#edf3f0;--blanco:#fbfdfc;--tinta:#0f2430;--tinta-2:#4b606b;--teal:#0b6f6c;--ambar:#e2a55c;--regla:#cddad5;
+  --display:"Stork Display","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --texto:"Stork Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--sala);color:var(--tinta);font:400 17px/1.55 var(--texto);padding-bottom:68px}
+@media(min-width:820px){body{padding-bottom:0}}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ambar);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+/* ---------- la vereda, de noche ---------- */
+.noche{background:var(--noche);color:#e8f1f2;position:relative;overflow:hidden}
+.foto{margin:0;position:relative}
+.foto img{display:block;width:100%;height:auto;aspect-ratio:1000/753;object-fit:cover}
+.foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,18,29,.35) 0,rgba(7,18,29,0) 22%,rgba(7,18,29,0) 62%,var(--noche) 100%)}
+.cartel{position:relative;padding:0 22px 44px;margin-top:-34px}
+.cruz{width:46px;height:46px;display:block;margin:0 0 14px;overflow:visible}
+.cruz path{fill:none;stroke:var(--neon);stroke-width:5;stroke-linejoin:round;filter:drop-shadow(0 0 6px var(--neon-halo)) drop-shadow(0 0 16px var(--neon-halo))}
+h1{margin:0;font:300 16px/1 var(--display);letter-spacing:.42em;text-transform:uppercase;color:#fff}
+h1 b{display:block;font:300 clamp(72px,23vw,150px)/.95 var(--display);letter-spacing:.1em;margin:10px 0 0 -.04em;color:#f4fffd;
+  text-shadow:0 0 8px rgba(143,245,230,.9),0 0 26px var(--neon-halo),0 0 60px rgba(64,224,208,.35)}
+.apagado h1 b{color:transparent;-webkit-text-stroke:1px rgba(143,245,230,.55);text-shadow:none}
+.apagado .cruz path{stroke:rgba(143,245,230,.45);filter:none}
+.estado{margin:22px 0 0;font-size:18px;color:#fff}
+.estado span{color:#a9bcc4}
+.bajada{margin:6px 0 26px;color:#a9bcc4;max-width:30em}
+.acciones{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--texto);text-decoration:none;border:1.5px solid transparent}
+.btn.luz{background:var(--neon);color:#042a2c}
+.btn.luz:hover{background:#b4fbf0}
+.btn.linea{border-color:rgba(232,241,242,.55);color:#fff}
+.btn.linea:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+@media(min-width:820px){
+  .noche .wrap{display:grid;grid-template-columns:1fr minmax(0,500px);gap:56px;align-items:center;padding-block:64px 72px}
+  .foto{order:2;border-radius:6px;overflow:hidden;box-shadow:0 0 0 1px rgba(143,245,230,.18),0 30px 80px rgba(0,0,0,.55)}
+  .foto::after{display:none}
+  .cartel{padding:0;margin:0}
+}
+@media(max-width:819px){.noche .wrap{padding:0}}
+
+/* encendido del cartel, una sola vez */
+@media(prefers-reduced-motion:no-preference){
+  .prendido h1 b,.prendido .cruz path{animation:prender 1.5s steps(1,end) both}
+  @keyframes prender{0%{opacity:.12}9%{opacity:1}13%{opacity:.25}19%{opacity:1}31%{opacity:.5}36%,100%{opacity:1}}
+}
+
+/* ---------- adentro ---------- */
+.umbral{height:10px;background:linear-gradient(180deg,#f6d9a8 0,var(--sala) 100%)}
+section{padding:60px 0 0}
+h2{font:300 clamp(34px,7.4vw,54px)/1.08 var(--display);letter-spacing:-.01em;margin:0 0 12px;color:var(--tinta)}
+.intro{max-width:34em;color:var(--tinta-2);margin:0 0 30px}
+
+.modos{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+@media(min-width:820px){.modos{grid-template-columns:repeat(3,1fr);gap:18px}}
+.modos li{background:var(--blanco);border-radius:6px;padding:26px 24px 24px;display:flex;flex-direction:column;border-bottom:3px solid var(--ambar)}
+.modos svg{width:30px;height:30px;stroke:var(--teal);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px}
+.modos h3{font:600 20px/1.2 var(--texto);margin:0 0 6px}
+.modos p{margin:0 0 18px;color:var(--tinta-2);font-size:16px;flex:1}
+.modos a{font-weight:600;color:var(--teal);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.modos a:hover{color:var(--tinta)}
+
+.gondola{margin:0;padding:0;list-style:none;font:300 clamp(26px,5.6vw,40px)/1.28 var(--display);color:var(--tinta)}
+.gondola li{display:inline}
+.gondola li:not(:last-child)::after{content:" / ";color:var(--ambar)}
+.aviso{margin:22px 0 0;color:var(--tinta-2);max-width:34em}
+
+.voz{display:grid;gap:10px 40px;align-items:end;background:var(--tinta);color:#e8f1f2;border-radius:6px;padding:38px 26px}
+@media(min-width:820px){.voz{grid-template-columns:auto 1fr;padding:48px}}
+.voz .nota{font:300 clamp(96px,24vw,150px)/.82 var(--display);color:var(--neon);letter-spacing:-.03em;margin:0}
+.voz p{margin:0;max-width:26em}
+.voz .cuanto{font-size:18px;color:#fff}
+.voz .que{color:#a9bcc4;margin-top:8px}
+
+.datos{display:grid;gap:44px}
+@media(min-width:820px){.datos{grid-template-columns:1fr 1fr;gap:56px}}
+.horas{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--tinta);font-variant-numeric:tabular-nums}
+.horas li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--regla)}
+.horas .x{color:var(--tinta-2)}
+.horas li.hoy{font-weight:600}
+.horas li.hoy span:first-child::after{content:" (hoy)";font-weight:400;color:var(--tinta-2)}
+address{font:300 clamp(30px,6.4vw,42px)/1.12 var(--display);font-style:normal;margin:0 0 6px}
+.zona{color:var(--tinta-2);margin:0 0 20px}
+.btn.tinta{background:var(--tinta);color:#fff}
+.btn.tinta:hover{background:#1b3a4a}
+.btn.borde{border-color:var(--tinta);color:var(--tinta)}
+.btn.borde:hover{background:var(--tinta);color:#fff}
+.mapa{margin-top:24px;border-radius:6px;overflow:hidden;line-height:0;border:1px solid var(--regla)}
+.mapa iframe{width:100%;height:300px;border:0}
+.acceso{margin:16px 0 0;color:var(--tinta-2);font-size:15px}
+
+footer{margin-top:72px;background:var(--noche);color:#8fa3ad;padding:30px 0 36px;font-size:14px}
+footer b{display:block;font:300 22px/1 var(--display);letter-spacing:.3em;text-transform:uppercase;color:#e8f1f2;margin-bottom:10px}
+
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(7,18,29,.94);backdrop-filter:blur(8px)}
+.barra a{flex:1;display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;text-decoration:none;font:600 15px/1 var(--texto);color:#fff;border:1.5px solid rgba(232,241,242,.4)}
+.barra a.luz{background:var(--neon);color:#042a2c;border-color:var(--neon)}
+@media(min-width:820px){.barra{display:none}}
+.ribbon{position:fixed;right:0;top:14px;z-index:50;background:#fff;color:#07121d;font:600 11px/1 var(--texto);letter-spacing:.06em;padding:7px 12px 7px 10px;border-radius:999px 0 0 999px}
+</style>
+</head>
+<body>
+<div class="ribbon">Versión de muestra</div>
+<main>
+<header class="noche" id="cartel"><div class="wrap">
+  <figure class="foto"><img src="assets/frente.jpg" alt="Frente de Farmacia Stork de noche, con el cartel y la cruz encendidos" width="1000" height="753"></figure>
+  <div class="cartel">
+    <svg class="cruz" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 4h12v14h14v12H30v14H18V30H4V18h14z"/></svg>
+    <h1>Farmacia <b>Stork</b></h1>
+    <p class="estado" id="estado" aria-live="polite">14 de Julio 4045 <span>· Bahía Blanca</span></p>
+    <p class="bajada">Tu farmacia de 14 de Julio. Vení al local, llamanos o pedí desde tu casa.</p>
+    <div class="acciones">
+      <a class="btn luz" href="tel:+542914234349">Llamar al 291 423-4349</a>
+      <a class="btn linea" href="https://storkfarmacia.mitiendanube.com/" target="_blank" rel="noopener">Comprar en la tienda online</a>
+    </div>
+  </div>
+</div></header>
+<div class="umbral" aria-hidden="true"></div>
+
+<div class="wrap">
+  <section id="atencion">
+    <h2>Tres maneras de resolverlo</h2>
+    <p class="intro">Elegí la que te quede más cómoda. Del otro lado siempre hay una persona de la farmacia.</p>
+    <ul class="modos">
+      <li>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 13 6 5h20l2 8M5 13v14h22V13M4 13h24M13 27v-8h6v8"/></svg>
+        <h3>En el mostrador</h3>
+        <p>Pasá por 14 de Julio 4045. Traé tu receta y tu credencial, y te asesoramos en el momento.</p>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=14%20de%20Julio%204045%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Cómo llegar</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 4h4l2 7-3 2a15 15 0 0 0 7 7l2-3 7 2v4a3 3 0 0 1-3 3C13 26 6 19 6 7a3 3 0 0 1 3-3z"/></svg>
+        <h3>Por teléfono</h3>
+        <p>Consultá si tenemos lo que buscás antes de salir. Si no está, vemos de conseguirlo.</p>
+        <a href="tel:+542914234349">Llamar al 291 423-4349</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 8h13v13H5zM18 12h5l4 4v5h-9M9 24.500a2.500 2.500 0 1 0 0-.01M22 24.500a2.500 2.500 0 1 0 0-.01"/></svg>
+        <h3>Desde tu casa</h3>
+        <p>Perfumería y cuidado personal en la tienda online, con envío a domicilio.</p>
+        <a href="https://storkfarmacia.mitiendanube.com/" target="_blank" rel="noopener">Ir a la tienda online</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="gondola">
+    <h2>Qué vas a encontrar</h2>
+    <ul class="gondola">
+      <li>Medicamentos</li><li>Dermocosmética</li><li>Perfumería</li><li>Cuidado personal</li><li>Bebés y maternidad</li><li>Primeros auxilios</li>
+    </ul>
+    <p class="aviso">Los medicamentos con receta se entregan en el mostrador. Ante cualquier duda sobre un tratamiento, consultá a tu médico o a tu farmacéutico.</p>
+  </section>
+
+  
+  <section id="opiniones">
+    <div class="voz">
+      <p class="nota">4,9</p>
+      <div>
+        <p class="cuanto">de 5 en Google Maps, con más de 470 opiniones.</p>
+        <p class="que">Lo que más se repite en las opiniones: la atención, la paciencia para explicar y que siempre buscan cómo resolver.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="visita">
+    <div class="datos">
+      <div>
+        <h2>Horarios</h2>
+        <ul class="horas" id="hours"><li data-d="1"><span>Lunes</span><span>8:30–21 h</span></li><li data-d="2"><span>Martes</span><span>8:30–21 h</span></li><li data-d="3"><span>Miércoles</span><span>8:30–21 h</span></li><li data-d="4"><span>Jueves</span><span>8:30–21 h</span></li><li data-d="5"><span>Viernes</span><span>8:30–21 h</span></li><li data-d="6"><span>Sábado</span><span>9–13 h</span></li><li data-d="0"><span>Domingo</span><span class="x">Cerrado</span></li></ul>
+      </div>
+      <div>
+        <h2>Dónde estamos</h2>
+        <address>14 de Julio 4045</address>
+        <p class="zona">Bahía Blanca, Buenos Aires</p>
+        <div class="acciones">
+          <a class="btn tinta" href="https://www.google.com/maps/dir/?api=1&amp;destination=14%20de%20Julio%204045%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn borde" href="tel:+542914234349">Llamar</a>
+        </div>
+        <div class="mapa"><iframe title="Mapa de la ubicación de Farmacia Stork" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=14%20de%20Julio%204045%2C%20Bah%C3%ADa%20Blanca%2C%20Buenos%20Aires&amp;output=embed"></iframe></div>
+        <p class="acceso">Entrada accesible para sillas de ruedas.</p>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+<footer><div class="wrap"><b>Farmacia Stork</b>14 de Julio 4045, Bahía Blanca · 291 423-4349 · © <span id="y"></span></div></footer>
+<nav class="barra" aria-label="Accesos rápidos">
+  <a class="luz" href="tel:+542914234349">Llamar</a>
+  <a href="https://storkfarmacia.mitiendanube.com/" target="_blank" rel="noopener">Tienda</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=14%20de%20Julio%204045%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Cómo llegar</a>
+</nav>
+<script>
+const SITE = {"sched":{"0":[],"1":[[510,1260]],"2":[[510,1260]],"3":[[510,1260]],"4":[[510,1260]],"5":[[510,1260]],"6":[[540,780]]},"wa":"5492914234349"};
+(function(){
+  const $ = id => document.getElementById(id);
+  $('y').textContent = new Date().getFullYear();
+  const S = SITE.sched;
+  const hm = m => { const h = Math.floor(m / 60), mm = m % 60; return h + (mm ? ':' + String(mm).padStart(2, '0') : ''); };
+  const DAYS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Argentina/Buenos_Aires', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date());
+  const g = t => parts.find(p => p.type === t).value;
+  const day = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 }[g('weekday')];
+  const now = (parseInt(g('hour'), 10) % 24) * 60 + parseInt(g('minute'), 10);
+  const el = $('estado'), cartel = $('cartel');
+  const cur = S[day].find(([a, b]) => now >= a && now < b);
+  if (cur) {
+    cartel.classList.add('prendido');
+    el.innerHTML = 'Abierta ahora <span>· hasta las ' + hm(cur[1]) + ' h</span>';
+  } else {
+    cartel.classList.add('apagado');
+    const later = S[day].find(([a]) => now < a);
+    let txt;
+    if (later) txt = 'abre hoy a las ' + hm(later[0]) + ' h';
+    else { let d = (day + 1) % 7, k = 1; while (!S[d].length) { d = (d + 1) % 7; k++; }
+      txt = 'abre ' + (k === 1 ? 'mañana' : 'el ' + DAYS[d]) + ' a las ' + hm(S[d][0][0]) + ' h'; }
+    el.innerHTML = 'Cerrada en este momento <span>· ' + txt + '</span>';
+  }
+  const li = document.querySelector('#hours li[data-d="' + day + '"]'); if (li) li.classList.add('hoy');
+})();
+</script>
+</body>
+</html>
