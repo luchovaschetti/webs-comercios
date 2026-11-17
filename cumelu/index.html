@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ec7a1c">
+<title>Cumelú Panadería · 14 de Julio 4067, Bahía Blanca</title>
+<meta name="description" content="Cumelú, panadería y confitería en 14 de Julio 4067, Bahía Blanca. De martes a domingo de 8 a 21 h. Tortas por encargo, horarios y cómo llegar.">
+<meta property="og:title" content="Cumelú Panadería · 14 de Julio 4067, Bahía Blanca">
+<meta property="og:description" content="Cumelú, panadería y confitería en 14 de Julio 4067, Bahía Blanca. De martes a domingo de 8 a 21 h. Tortas por encargo, horarios y cómo llegar.">
+<meta property="og:locale" content="es_AR">
+<meta name="robots" content="noindex, nofollow">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Cumelú Panadería","telephone":"+542915265171","address":{"@type":"PostalAddress","streetAddress":"14 de Julio 4067","addressLocality":"Bahía Blanca","addressRegion":"Buenos Aires","postalCode":"8000","addressCountry":"AR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"21:00"}],"geo":{"@type":"GeoCoordinates","latitude":-38.6991455,"longitude":-62.2115129},"sameAs":["https://www.instagram.com/cumelupanaderia/"]}</script>
+<style>
+@font-face{font-family:"Cumelu Serif";src:url(assets/cal-it.woff) format("woff");font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:"Cumelu Serif";src:url(assets/cal-bi.woff) format("woff");font-style:italic;font-weight:700;font-display:swap}
+@font-face{font-family:"Cumelu Text";src:url(assets/t-reg.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Cumelu Text";src:url(assets/t-sb.woff) format("woff");font-weight:600;font-display:swap}
+:root{
+  --naranja:#ec7a1c;--naranja-o:#c45f0c;--papel:#fffdf9;--miga:#f7efe4;--tinta:#231c17;--tinta-2:#6b5d52;--linea:#e8dccd;
+  --serif:"Cumelu Serif",Georgia,serif;--texto:"Cumelu Text","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 17px/1.6 var(--texto);padding-bottom:70px}
+@media(min-width:820px){body{padding-bottom:0}}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tinta);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+svg.d{fill:none;stroke:var(--tinta);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- la bolsa ---------- */
+.bolsa{position:relative;overflow:hidden;text-align:center;padding:46px 0 52px;border-bottom:1px solid var(--linea)}
+.zona-sello{position:relative;max-width:470px;margin:0 auto}
+.estampa{position:absolute;inset:0;pointer-events:none}
+.estampa svg{position:absolute;width:clamp(40px,11vw,60px);height:clamp(40px,11vw,60px)}
+.sello{position:relative;width:min(66vw,320px);aspect-ratio:1;margin:0 auto;border-radius:50%;background:var(--naranja);display:grid;place-items:center;box-shadow:inset 0 0 0 7px var(--naranja),inset 0 0 0 9px rgba(255,255,255,.75)}
+.sello h1{margin:0;font:700 italic clamp(52px,15.5vw,80px)/1 var(--serif);color:#fff;letter-spacing:-.01em;transform:rotate(-4deg)}
+.oficio{margin:26px 0 0;font:600 15px/1 var(--texto);letter-spacing:.32em;text-transform:uppercase}
+.filete{display:block;width:min(86vw,360px);height:16px;margin:12px auto 0;color:var(--naranja)}
+.filete path{stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round}
+.filete circle,.filete .h{fill:currentColor;stroke:none}
+.estado{margin:26px 0 4px;font-size:18px}
+.estado span{color:var(--tinta-2)}
+.dir{margin:0 0 24px;color:var(--tinta-2)}
+.acciones{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:54px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--texto);text-decoration:none;border:1.5px solid var(--tinta)}
+.btn.lleno{background:var(--tinta);color:#fff}
+.btn.lleno:hover{background:#3a2f27}
+.btn:not(.lleno):hover{background:var(--tinta);color:#fff}
+.btn svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+@media(prefers-reduced-motion:no-preference){
+  .sello{animation:sellar .7s cubic-bezier(.2,1.3,.4,1) both}
+  @keyframes sellar{from{transform:scale(.6) rotate(-14deg);opacity:0}to{transform:none;opacity:1}}
+}
+
+section{padding:64px 0 0}
+h2{font:700 italic clamp(36px,7.6vw,54px)/1.05 var(--serif);margin:0 0 12px}
+.intro{color:var(--tinta-2);max-width:32em;margin:0 0 30px}
+
+/* ---------- del horno ---------- */
+.horno{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(min-width:820px){.horno{grid-template-columns:repeat(4,1fr);gap:16px}}
+.horno li{background:var(--miga);border-radius:14px;padding:22px 18px 20px}
+.horno svg{width:58px;height:58px;display:block;margin:0 0 14px}
+.horno b{display:block;font:700 italic 24px/1.1 var(--serif);margin-bottom:4px}
+.horno span{color:var(--tinta-2);font-size:15px;line-height:1.45;display:block}
+
+/* ---------- encargos ---------- */
+.encargo{display:grid;gap:26px;align-items:center;background:var(--naranja);color:#fff;border-radius:14px;padding:34px 26px;position:relative;overflow:hidden}
+@media(min-width:820px){.encargo{grid-template-columns:1.2fr 1fr;padding:48px}}
+.encargo h2{color:#fff}
+.encargo p{margin:0 0 22px;max-width:28em}
+.encargo .btn{background:#fff;color:var(--tinta);border-color:#fff}
+.encargo .btn:hover{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.encargo ol{margin:0;padding:0;list-style:none;counter-reset:e;display:grid;gap:10px}
+.encargo ol li{counter-increment:e;display:flex;gap:14px;align-items:baseline;background:rgba(255,255,255,.14);border-radius:10px;padding:13px 16px}
+.encargo ol li::before{content:counter(e);font:700 italic 26px/1 var(--serif);min-width:16px}
+
+/* ---------- el local ---------- */
+.local{display:grid;gap:30px;align-items:center}
+@media(min-width:820px){.local{grid-template-columns:1fr 1fr;gap:48px}}
+.local figure{margin:0;border-radius:14px;overflow:hidden;line-height:0}
+.local figure img{width:100%;height:auto}
+.opinion{display:flex;gap:18px;align-items:center;margin:26px 0 0;padding-top:22px;border-top:1px solid var(--linea)}
+.opinion b{font:700 italic 64px/1 var(--serif);color:var(--naranja-o)}
+.opinion span{color:var(--tinta-2);font-size:15px}
+
+.datos{display:grid;gap:44px}
+@media(min-width:820px){.datos{grid-template-columns:1fr 1fr;gap:56px}}
+.horas{list-style:none;margin:0;padding:0;font-variant-numeric:tabular-nums}
+.horas li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px dashed var(--linea)}
+.horas .x{color:var(--tinta-2)}
+.horas li.hoy{font-weight:600}
+.horas li.hoy span:first-child::after{content:" (hoy)";font-weight:400;color:var(--tinta-2)}
+address{font:700 italic clamp(30px,6.6vw,42px)/1.1 var(--serif);font-style:italic;margin:0 0 4px}
+.zona{color:var(--tinta-2);margin:0 0 20px}
+.datos .acciones{justify-content:flex-start}
+.mapa{margin-top:22px;border-radius:14px;overflow:hidden;line-height:0;border:1px solid var(--linea)}
+.mapa iframe{width:100%;height:300px;border:0}
+
+footer{margin-top:72px;border-top:1px solid var(--linea);padding:28px 0 36px;font-size:14px;color:var(--tinta-2);text-align:center}
+footer b{display:block;font:700 italic 30px/1 var(--serif);color:var(--naranja-o);margin-bottom:8px}
+
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(255,253,249,.95);backdrop-filter:blur(8px);border-top:1px solid var(--linea)}
+.barra a{flex:1;display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;text-decoration:none;font:600 15px/1 var(--texto);border:1.5px solid var(--tinta)}
+.barra a.lleno{background:var(--tinta);color:#fff}
+@media(min-width:820px){.barra{display:none}}
+.ribbon{position:fixed;right:0;top:14px;z-index:50;background:var(--tinta);color:#fff;font:600 11px/1 var(--texto);letter-spacing:.06em;padding:7px 12px 7px 10px;border-radius:999px 0 0 999px}
+</style>
+</head>
+<body>
+<div class="ribbon">Versión de muestra</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="medialuna" viewBox="0 0 64 64"><path d="M8 40c4-14 16-22 24-22s20 8 24 22c-5-4-10-5-14-3 0-7-5-11-10-11s-10 4-10 11c-4-2-9-1-14 3z"/><path d="M22 37c1-5 3-9 10-11M42 37c-1-5-3-9-10-11M32 26v13"/></symbol>
+  <symbol id="pan" viewBox="0 0 64 64"><path d="M6 38c0-10 12-16 26-16s26 6 26 16c0 6-6 8-26 8S6 44 6 38z"/><path d="M18 26l5 8M28 23l5 9M38 23l5 9M47 27l4 6"/></symbol>
+  <symbol id="torta" viewBox="0 0 64 64"><path d="M10 34h44v18H10zM10 34c0-8 10-12 22-12s22 4 22 12"/><path d="M10 42c4 3 8 3 11 0 4 3 8 3 11 0 4 3 8 3 11 0 4 3 8 3 11 0M32 22v-8M30 10c0-3 2-4 2-6 0 2 2 3 2 6"/></symbol>
+  <symbol id="masita" viewBox="0 0 64 64"><circle cx="32" cy="34" r="17"/><circle cx="32" cy="34" r="8"/><path d="M20 20l2 3M44 20l-2 3M32 15v3"/></symbol>
+  <symbol id="baguette" viewBox="0 0 64 64"><path d="M10 50c-3-3 0-8 6-14L38 14c6-6 11-9 14-6s0 8-6 14L24 44c-6 6-11 9-14 6z"/><path d="M22 34l6 4M30 26l6 4M38 18l6 4"/></symbol>
+</svg>
+<main>
+<header class="bolsa">
+  <div class="wrap">
+    <div class="zona-sello">
+      <div class="estampa" aria-hidden="true">
+        <svg class="d" style="left:0;top:0;transform:rotate(-18deg)"><use href="#medialuna"/></svg>
+        <svg class="d" style="right:0;top:4%;transform:rotate(14deg)"><use href="#torta"/></svg>
+        <svg class="d" style="left:2%;bottom:2%;transform:rotate(10deg)"><use href="#masita"/></svg>
+        <svg class="d" style="right:2%;bottom:6%;transform:rotate(-8deg)"><use href="#baguette"/></svg>
+      </div>
+      <div class="sello"><h1>Cumelú</h1></div>
+    </div>
+    <p class="oficio">Panadería &amp; Confitería</p>
+    <svg class="filete" viewBox="0 0 360 16" aria-hidden="true"><path d="M14 8h146M200 8h146"/><path class="h" d="M2 8c4-6 10-6 12 0-2 6-8 6-12 0zM358 8c-4-6-10-6-12 0 2 6 8 6 12 0z"/><circle cx="180" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="180" cy="8" r="2"/></svg>
+    <p class="estado" id="estado" aria-live="polite">De martes a domingo <span>· 8 a 21 h</span></p>
+    <p class="dir">14 de Julio 4067, Bahía Blanca</p>
+    <div class="acciones">
+      <a class="btn lleno" href="tel:+542915265171"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.500 5-2.200 1.500a11 11 0 0 0 5.200 5.200L16 12.500l5 1.500v3a2 2 0 0 1-2 2C10.700 19 5 13.300 5 5a2 2 0 0 1 2-2z"/></svg>Llamar al 291 526-5171</a>
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=14%20de%20Julio%204067%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section id="horno">
+    <h2>Del horno al mostrador</h2>
+    <p class="intro">Elaboración propia, todos los días. Lo que sale, mejor verlo en el local o en nuestro Instagram.</p>
+    <ul class="horno">
+      <li><svg class="d" aria-hidden="true"><use href="#pan"/></svg><b>Panadería</b><span>Pan del día, flautas y especiales.</span></li>
+      <li><svg class="d" aria-hidden="true"><use href="#medialuna"/></svg><b>Facturas</b><span>Medialunas y facturas para el mate.</span></li>
+      <li><svg class="d" aria-hidden="true"><use href="#torta"/></svg><b>Tortas</b><span>Para el fin de semana o para tu festejo.</span></li>
+      <li><svg class="d" aria-hidden="true"><use href="#masita"/></svg><b>Confitería</b><span>Masas, postres y algo dulce para llevar.</span></li>
+    </ul>
+  </section>
+
+  <section id="encargos">
+    <div class="encargo">
+      <div>
+        <h2>Tortas por encargo</h2>
+        <p>Cumpleaños, reuniones o una mesa dulce. Llamanos con unos días de anticipación y lo armamos con vos.</p>
+        <a class="btn" href="tel:+542915265171">Llamar para encargar</a>
+      </div>
+      <ol>
+        <li>Para qué día lo necesitás</li>
+        <li>Para cuántas personas</li>
+        <li>Qué te gustaría, y lo vemos juntos</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="local">
+    <div class="local">
+      <figure><img src="assets/frente.jpg" alt="Cartel de Cumelú sobre la puerta del local, con panificados y tortas" width="573" height="315" loading="lazy"></figure>
+      <div>
+        <h2>Te esperamos en el barrio</h2>
+        <p class="intro">Estamos sobre 14 de Julio, a la altura del 4067. Buscá el cartel naranja con el sello de Cumelú.</p>
+        <a class="btn" href="https://www.instagram.com/cumelupanaderia/" target="_blank" rel="noopener">Ver novedades en Instagram</a>
+        <p class="opinion"><b>4,7</b><span>de 5 en Google Maps, con más de 220 opiniones.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visita">
+    <div class="datos">
+      <div>
+        <h2>Horarios</h2>
+        <ul class="horas" id="hours"><li data-d="1"><span>Lunes</span><span class="x">Cerrado</span></li><li data-d="2"><span>Martes</span><span>8–21 h</span></li><li data-d="3"><span>Miércoles</span><span>8–21 h</span></li><li data-d="4"><span>Jueves</span><span>8–21 h</span></li><li data-d="5"><span>Viernes</span><span>8–21 h</span></li><li data-d="6"><span>Sábado</span><span>8–21 h</span></li><li data-d="0"><span>Domingo</span><span>8–21 h</span></li></ul>
+      </div>
+      <div>
+        <h2>Dónde estamos</h2>
+        <address>14 de Julio 4067</address>
+        <p class="zona">Bahía Blanca, Buenos Aires</p>
+        <div class="acciones">
+          <a class="btn lleno" href="https://www.google.com/maps/dir/?api=1&amp;destination=14%20de%20Julio%204067%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn" href="tel:+542915265171">Llamar</a>
+        </div>
+        <div class="mapa"><iframe title="Mapa de la ubicación de Cumelú" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=14%20de%20Julio%204067%2C%20Bah%C3%ADa%20Blanca%2C%20Buenos%20Aires&amp;output=embed"></iframe></div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+<footer><div class="wrap"><b>Cumelú</b>Panadería &amp; Confitería · 14 de Julio 4067, Bahía Blanca · 291 526-5171</div></footer>
+<nav class="barra" aria-label="Accesos rápidos">
+  <a class="lleno" href="tel:+542915265171">Llamar</a>
+  <a href="https://www.instagram.com/cumelupanaderia/" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=14%20de%20Julio%204067%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Cómo llegar</a>
+</nav>
+<script>
+const SITE = {"sched":{"0":[[480,1260]],"1":[],"2":[[480,1260]],"3":[[480,1260]],"4":[[480,1260]],"5":[[480,1260]],"6":[[480,1260]]},"wa":""};
+(function(){
+  const S = SITE.sched;
+  const hm = m => { const h = Math.floor(m / 60), mm = m % 60; return h + (mm ? ':' + String(mm).padStart(2, '0') : ''); };
+  const DAYS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Argentina/Buenos_Aires', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date());
+  const g = t => parts.find(p => p.type === t).value;
+  const day = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 }[g('weekday')];
+  const now = (parseInt(g('hour'), 10) % 24) * 60 + parseInt(g('minute'), 10);
+  const el = document.getElementById('estado');
+  const cur = S[day].find(([a, b]) => now >= a && now < b);
+  if (cur) el.innerHTML = 'Abierto ahora <span>· hasta las ' + hm(cur[1]) + ' h</span>';
+  else {
+    const later = S[day].find(([a]) => now < a);
+    let t;
+    if (later) t = 'abre hoy a las ' + hm(later[0]) + ' h';
+    else { let d = (day + 1) % 7, k = 1; while (!S[d].length) { d = (d + 1) % 7; k++; }
+      t = 'abre ' + (k === 1 ? 'mañana' : 'el ' + DAYS[d]) + ' a las ' + hm(S[d][0][0]) + ' h'; }
+    el.innerHTML = 'Cerrado ahora <span>· ' + t + '</span>';
+  }
+  const li = document.querySelector('#hours li[data-d="' + day + '"]'); if (li) li.classList.add('hoy');
+})();
+</script>
+</body>
+</html>
