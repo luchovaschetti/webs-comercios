@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0f1c">
+<title>Carioca Food Truck · Ahumados en San Juan 664, Bahía Blanca</title>
+<meta name="description" content="Brisket, pulled pork, burnt ends y smash burgers. Food truck con 30 años en Bahía Blanca. Pedidos por WhatsApp.">
+<meta property="og:title" content="Carioca Food Truck · Ahumados en San Juan 664, Bahía Blanca">
+<meta property="og:description" content="Brisket, pulled pork, burnt ends y smash burgers. Food truck con 30 años en Bahía Blanca. Pedidos por WhatsApp.">
+<meta name="robots" content="noindex,nofollow">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Carioca Food Truck", "telephone": "+542915114500", "address": {"@type": "PostalAddress", "streetAddress": "San Juan 664", "addressLocality": "Bahía Blanca", "addressRegion": "Buenos Aires", "addressCountry": "AR"}, "geo": {"@type": "GeoCoordinates", "latitude": -38.7018461, "longitude": -62.2683315}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.8, "reviewCount": 351}, "servesCuisine": "Ahumados", "sameAs": ["https://www.instagram.com/carioca_foodtruck/"]}</script>
+<style>
+@font-face{font-family:"Txt";src:url(assets/inter-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Txt";src:url(assets/inter-600.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Dsp";src:url(assets/interd-900i.woff) format("woff");font-weight:900;font-style:italic;font-display:swap}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0}
+img,svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.demo{position:fixed;right:0;bottom:84px;z-index:50;background:#fff;color:#111;font:600 11px/1 "Txt",sans-serif;letter-spacing:.04em;padding:7px 12px 7px 10px;border-radius:999px 0 0 999px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.ico svg,.btn svg,.barra svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+@media(min-width:900px){.demo{bottom:20px}}
+
+body{background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--body,"Txt"),system-ui,sans-serif}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 24px;border-radius:var(--r);text-decoration:none;font:var(--bfont);letter-spacing:var(--bls,0);text-transform:var(--bcase,none);border:var(--bw,1.5px) solid var(--fg);transition:background .15s,color .15s,border-color .15s}
+.btn.a{background:var(--acc);border-color:var(--acc);color:var(--acc-fg)}
+.btn.a:hover{filter:brightness(1.08)}
+.btn.o:hover{background:var(--fg);color:var(--bg)}
+.acc{display:flex;flex-wrap:wrap;gap:12px}
+.estado{margin:0 0 20px;font:600 16px/1.3 "Txt"}.estado span{font-weight:400;color:var(--muted)}
+.estado i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--off,#8a8580);margin-right:10px;vertical-align:1px}
+.abierto .estado i{background:var(--on,#2e9d5b);box-shadow:0 0 0 4px color-mix(in srgb,var(--on,#2e9d5b) 25%,transparent)}
+section{padding:clamp(66px,9vw,116px) 0 0}
+h2{margin:0;font:var(--h2);letter-spacing:var(--h2ls,0);text-transform:var(--h2case,none);color:var(--h2c,var(--fg))}
+.cab{display:grid;gap:14px;margin-bottom:38px}
+@media(min-width:900px){.cab{grid-template-columns:1fr 1fr;align-items:end}}
+.cab p{margin:0;color:var(--muted);max-width:31em}
+.voz{display:grid;gap:24px;align-items:center;border-top:var(--rule,1.5px) solid var(--line2,var(--line));padding-top:30px}
+@media(min-width:900px){.voz{grid-template-columns:auto 1fr auto;gap:52px}}
+.voz .n{margin:0;font:var(--num);color:var(--numc,var(--acc))}
+.voz p{margin:0;max-width:34em}.voz .q{color:var(--muted);margin-top:8px}
+.redes{display:flex;flex-direction:column;gap:14px}
+.red{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:600 16px/1 "Txt"}
+.red svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.datos{display:grid;gap:44px}
+@media(min-width:900px){.datos{grid-template-columns:1fr 1.1fr;gap:64px}}
+.horas{list-style:none;margin:24px 0 0;padding:0;border-top:var(--rule,1.5px) solid var(--line2,var(--fg));font-variant-numeric:tabular-nums}
+.horas li{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.horas .t{text-align:right}
+.horas .x{color:var(--muted)}
+.horas li.hoy{font-weight:600;color:var(--hoy,var(--fg))}
+.horas li.hoy span:first-child::after{content:" · hoy";font-weight:400}
+.hnota{color:var(--muted);margin:14px 0 0;font-size:15px}
+address{font:var(--addr);font-style:normal;margin:24px 0 6px;text-transform:var(--h2case,none);color:var(--h2c,var(--fg))}
+.zona{color:var(--muted);margin:0 0 22px}
+.mapa{margin-top:24px;border-radius:var(--rc);overflow:hidden;line-height:0;border:1px solid var(--line)}
+.mapa iframe{width:100%;height:320px;border:0;filter:var(--mapf,none)}
+footer{margin-top:clamp(70px,9vw,110px);border-top:1px solid var(--line)}
+footer .wrap{padding:34px 0 120px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;color:var(--muted);font-size:14px}
+footer b{font:var(--foot);color:var(--h2c,var(--fg));text-transform:var(--h2case,none)}
+@media(min-width:900px){footer .wrap{padding-bottom:40px}}
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--barbg,var(--bg));border-top:1px solid var(--line)}
+.barra a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:var(--r);text-decoration:none;font:var(--barfont,600 15px/1 "Txt");letter-spacing:var(--bls,0);text-transform:var(--bcase,none);border:1px solid var(--line);color:var(--fg)}
+.barra a.a{flex:1.5;background:var(--acc);border-color:var(--acc);color:var(--acc-fg)}
+@media(min-width:900px){.barra{display:none}}
+
+:root{--bg:#0b0f1c;--fg:#eef1f7;--muted:#98a0b8;--line:#1f2740;--acc:#ffd23f;--acc-fg:#141000;--on:#5fa8ff;--r:12px;--rc:14px;
+--bfont:700 16px/1 "Txt";--h2:900 italic clamp(46px,8vw,86px)/.9 "Dsp";--h2ls:-.03em;--num:900 italic clamp(100px,14vw,160px)/.8 "Dsp";--numc:#ffd23f;
+--addr:900 italic clamp(34px,5vw,50px)/1 "Dsp";--foot:900 italic 32px/1 "Dsp";--mapf:grayscale(1) invert(.92) hue-rotate(180deg);--hoy:#5fa8ff;--line2:#5fa8ff;--barbg:rgba(11,15,28,.95)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(70% 60% at 85% 20%,#13224a 0,#0b0f1c 70%)}
+.humo{position:absolute;right:0;top:0;height:100%;width:min(320px,40vw)}
+.hero .wrap{position:relative;padding:clamp(40px,6vw,80px) 0 clamp(54px,7vw,96px)}
+.neon{margin:0;font:900 italic clamp(84px,19vw,210px)/.85 "Dsp";letter-spacing:-.04em;color:#e8f2ff;text-shadow:0 0 6px #5fa8ff,0 0 22px #2f7cff,0 0 48px rgba(47,124,255,.6)}
+.hero .sub{margin:14px 0 0;font:900 italic clamp(22px,3.4vw,34px)/1 "Dsp";color:var(--acc)}
+.treinta{display:inline-flex;align-items:baseline;gap:12px;margin:30px 0 0;padding:14px 18px;border:1.5px solid #5fa8ff;border-radius:12px}
+.treinta b{font:900 italic 46px/1 "Dsp";color:#5fa8ff}
+.treinta span{color:var(--muted);max-width:16em;line-height:1.35}
+.lead{margin:22px 0 24px;font-size:clamp(18px,2vw,21px);max-width:28em;color:#cfd5e6}
+.smoke{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+@media(min-width:900px){.smoke{grid-template-columns:repeat(3,1fr)}}
+.smoke li{background:#111833;border:1px solid var(--line);border-radius:16px;padding:26px 24px}
+.smoke b{display:block;font:900 italic 28px/1 "Dsp";letter-spacing:-.02em;margin-bottom:8px}
+.smoke span{color:var(--muted);font-size:16px}
+.smoke li:first-child{background:#ffd23f;color:#141000;border-color:#ffd23f}
+.smoke li:first-child span{color:#3a3000}
+.especial{margin-top:clamp(66px,9vw,116px);border-block:1px solid var(--line);background:#0e1427}
+.especial .wrap{display:grid;gap:24px;padding:clamp(48px,7vw,86px) 0;align-items:center}
+@media(min-width:900px){.especial .wrap{grid-template-columns:1.2fr 1fr;gap:60px}}
+.especial p{margin:14px 0 0;color:#cfd5e6;font-size:18px;max-width:30em}
+.pasos{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:p}
+.pasos li{counter-increment:p;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.pasos li::before{content:counter(p);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid #5fa8ff;font:900 italic 20px/1 "Dsp";color:#5fa8ff}
+.pasos b{display:block}
+.pasos span{color:var(--muted);font-size:15px}
+
+</style>
+</head>
+<body>
+<div class="demo">Versión de muestra</div>
+<header class="hero"><svg class="humo" viewBox="0 0 200 400" aria-hidden="true" preserveAspectRatio="none">
+<g fill="none" stroke="#5fa8ff" stroke-width="2" stroke-linecap="round" opacity=".35">
+<path d="M40 400c-20-50 30-80 10-130s30-80 10-130 20-80 10-140"/>
+<path d="M100 400c-20-50 30-80 10-130s30-80 10-130 20-80 10-140"/>
+<path d="M160 400c-20-50 30-80 10-130s30-80 10-130 20-80 10-140"/></g></svg><div class="wrap">
+  <h1 class="neon">Carioca</h1>
+  <p class="sub">Food truck · Ahumados</p>
+  <div class="treinta"><b>30</b><span>años en Bahía Blanca. De los primeros food trucks de la ciudad.</span></div>
+  <p class="lead">Brisket, pulled pork y burnt ends que pasan horas en el ahumador, y smash burgers a la plancha. De martes a domingo a la noche, en San Juan 664.</p>
+  <p class="estado" id="estado"></p>
+  <div class="acc"><a class="btn a" href="https://wa.me/5492915114500?text=Hola%20Carioca%21%20Quer%C3%ADa%20hacer%20un%20pedido%20para%20retirar.%0AQu%C3%A9%20quiero%3A%0AA%20qu%C3%A9%20hora%20paso%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Pedir para retirar</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Carioca%20Food%20Truck%2C%20San%20Juan%20664%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a></div>
+</div></header>
+<main>
+<section class="wrap" id="ahumador">
+  <div class="cab"><h2>Lo que sale del ahumador</h2><p>Lo ahumado lleva su tiempo y sale en tandas. Si querés asegurarte algo, avisá antes por WhatsApp.</p></div>
+  <ul class="smoke"><li><b>Brisket</b><span>Pecho de ternera ahumado muchas horas, hasta que se corta con tenedor.</span></li><li><b>Pulled pork</b><span>Cerdo desmechado, en sándwich, sobre papas o en pizza.</span></li><li><b>Burnt ends</b><span>Las puntas del brisket, caramelizadas. Salen pocas.</span></li><li><b>Smash burger</b><span>Carne aplastada en la plancha, bordes crocantes.</span></li><li><b>Bondiola</b><span>Clásico de food truck, hecho como corresponde.</span></li><li><b>Papas pulled</b><span>Papas con pulled pork arriba. Para compartir o no.</span></li></ul>
+</section>
+<div class="especial"><div class="wrap">
+  <div><h2>Pedí y pasá</h2><p>Escribinos qué querés y a qué hora pasás. Te lo tenemos listo en el truck, sin esperar.</p></div>
+  <ol class="pasos">
+    <li><div><b>Mandá el pedido</b><span>Por WhatsApp al 291 511-4500.</span></div></li>
+    <li><div><b>Te confirmamos</b><span>Precio y hora de retiro.</span></div></li>
+    <li><div><b>Pasás por San Juan 664</b><span>De martes a domingo, desde las 20 h.</span></div></li>
+  </ol>
+</div></div>
+<section class="wrap" id="opiniones">
+  <div class="voz"><p class="n">4,8</p>
+    <div><p>de 5 en Google Maps, con más de 300 opiniones.</p><p class="q">Lo que más se repite: la bondiola, los ahumados y la buena onda del que atiende.</p></div>
+    <div class="redes"><a class="red" href="https://www.instagram.com/carioca_foodtruck/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>@carioca_foodtruck</a></div></div>
+</section>
+<section class="wrap" id="visita">
+  <div class="datos">
+    <div><h2>Horarios</h2><ul class="horas"><li data-d="1"><span>Lunes</span><span class="t x">Cerrado</span></li><li data-d="2"><span>Martes</span><span class="t">20 a 0 h</span></li><li data-d="3"><span>Miércoles</span><span class="t">20 a 0 h</span></li><li data-d="4"><span>Jueves</span><span class="t">20 a 0 h</span></li><li data-d="5"><span>Viernes</span><span class="t">20 a 0 h</span></li><li data-d="6"><span>Sábado</span><span class="t">20 a 0 h</span></li><li data-d="0"><span>Domingo</span><span class="t">20 a 0 h</span></li></ul><p class="hnota">Lunes cerrado.</p></div>
+    <div><h2>Dónde</h2><address>San Juan 664</address><p class="zona">Bahía Blanca</p>
+      <div class="acc"><a class="btn a" href="https://www.google.com/maps/search/?api=1&query=Carioca%20Food%20Truck%2C%20San%20Juan%20664%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a><a class="btn o" href="tel:+542915114500"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 5-2.2 1.5a11 11 0 0 0 5.2 5.2L16 12.5l5 1.5v3a2 2 0 0 1-2 2C10.7 19 5 13.3 5 5a2 2 0 0 1 2-2z"/></svg>291 511-4500</a></div>
+      <div class="mapa"><iframe title="Mapa de Carioca" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-38.7018461,-62.2683315&z=15&output=embed"></iframe></div></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><b>Carioca</b><span>Food truck · San Juan 664, Bahía Blanca · 291 511-4500</span></div></footer>
+<nav class="barra" aria-label="Accesos rápidos"><a class="a" href="https://wa.me/5492915114500?text=Hola%20Carioca%21%20Quer%C3%ADa%20hacer%20un%20pedido%20para%20retirar.%0AQu%C3%A9%20quiero%3A%0AA%20qu%C3%A9%20hora%20paso%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Pedir</a><a href="tel:+542915114500"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 5-2.2 1.5a11 11 0 0 0 5.2 5.2L16 12.5l5 1.5v3a2 2 0 0 1-2 2C10.7 19 5 13.3 5 5a2 2 0 0 1 2-2z"/></svg>Llamar</a><a href="https://www.google.com/maps/search/?api=1&query=Carioca%20Food%20Truck%2C%20San%20Juan%20664%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Llegar</a></nav>
+<script>
+(function(){
+  var S={"0": [[1200, 1440]], "1": [], "2": [[1200, 1440]], "3": [[1200, 1440]], "4": [[1200, 1440]], "5": [[1200, 1440]], "6": [[1200, 1440]]}, el=document.getElementById('estado'), root=document.documentElement;
+  var hm=function(m){m%=1440;var h=Math.floor(m/60),mm=m%60;return h+(mm?':'+String(mm).padStart(2,'0'):'')+' h'};
+  var D=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Argentina/Buenos_Aires',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  var g=function(t){return p.find(function(x){return x.type===t}).value};
+  var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')], now=(parseInt(g('hour'),10)%24)*60+parseInt(g('minute'),10);
+  var prev=(day+6)%7, open=null;
+  S[day].forEach(function(r){if(now>=r[0]&&now<r[1])open=r[1]});
+  S[prev].forEach(function(r){if(r[1]>1440&&now<r[1]-1440)open=r[1]});
+  if(open!==null){root.classList.add('abierto');el.innerHTML='<i></i>Abierto ahora <span>· hasta las '+hm(open)+'</span>';}
+  else{root.classList.add('cerrado');var t=null;
+    S[day].forEach(function(r){if(t===null&&now<r[0])t='hoy a las '+hm(r[0])});
+    if(t===null){for(var k=1;k<8;k++){var d=(day+k)%7;if(S[d].length){t=(k===1?'mañana':'el '+D[d])+' a las '+hm(S[d][0][0]);break;}}}
+    el.innerHTML='<i></i>Cerrado ahora <span>· abre '+t+'</span>';}
+  var li=document.querySelector('.horas li[data-d="'+day+'"]');if(li)li.classList.add('hoy');
+})();
+</script>
+<script data-goatcounter="https://luchovaschetti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
