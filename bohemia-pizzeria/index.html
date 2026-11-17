@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#7a0f14">
+<title>Pizzería Bohemia · La mejor pizza al molde de Bahía</title>
+<meta name="description" content="Pizza al molde y al corte, bar y restaurante. Chiclana 83 y Av. Alem 1089, Bahía Blanca.">
+<meta property="og:title" content="Pizzería Bohemia · La mejor pizza al molde de Bahía">
+<meta property="og:description" content="Pizza al molde y al corte, bar y restaurante. Chiclana 83 y Av. Alem 1089, Bahía Blanca.">
+<meta name="robots" content="noindex,nofollow">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Pizzería Bohemia", "telephone": "+542915050017", "address": {"@type": "PostalAddress", "streetAddress": "Chiclana 83", "addressLocality": "Bahía Blanca", "addressRegion": "Buenos Aires", "addressCountry": "AR"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.4, "reviewCount": 1631}, "sameAs": ["https://www.instagram.com/bohemiapizzeria/"]}</script>
+<style>
+@font-face{font-family:"Txt";src:url(assets/inter-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Txt";src:url(assets/inter-600.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Bon";src:url(assets/bon-700.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Bon";src:url(assets/bon-700i.woff) format("woff");font-weight:700;font-style:italic;font-display:swap}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0}
+img,svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.demo{position:fixed;right:0;bottom:84px;z-index:50;background:#fff;color:#111;font:600 11px/1 "Txt",sans-serif;letter-spacing:.04em;padding:7px 12px 7px 10px;border-radius:999px 0 0 999px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.ico svg,.btn svg,.barra svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+@media(min-width:900px){.demo{bottom:20px}}
+
+body{background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--body,"Txt"),system-ui,sans-serif}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 24px;border-radius:var(--r);text-decoration:none;font:var(--bfont);letter-spacing:var(--bls,0);text-transform:var(--bcase,none);border:var(--bw,1.5px) solid var(--fg);transition:background .15s,color .15s,border-color .15s}
+.btn.a{background:var(--acc);border-color:var(--acc);color:var(--acc-fg)}
+.btn.a:hover{filter:brightness(1.08)}
+.btn.o:hover{background:var(--fg);color:var(--bg)}
+.acc{display:flex;flex-wrap:wrap;gap:12px}
+.estado{margin:0 0 20px;font:600 16px/1.3 "Txt"}.estado span{font-weight:400;color:var(--muted)}
+.estado i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--off,#8a8580);margin-right:10px;vertical-align:1px}
+.abierto .estado i{background:var(--on,#2e9d5b);box-shadow:0 0 0 4px color-mix(in srgb,var(--on,#2e9d5b) 25%,transparent)}
+section{padding:clamp(66px,9vw,116px) 0 0}
+h2{margin:0;font:var(--h2);letter-spacing:var(--h2ls,0);text-transform:var(--h2case,none);color:var(--h2c,var(--fg))}
+.cab{display:grid;gap:14px;margin-bottom:38px}
+@media(min-width:900px){.cab{grid-template-columns:1fr 1fr;align-items:end}}
+.cab p{margin:0;color:var(--muted);max-width:31em}
+.voz{display:grid;gap:24px;align-items:center;border-top:var(--rule,1.5px) solid var(--line2,var(--line));padding-top:30px}
+@media(min-width:900px){.voz{grid-template-columns:auto 1fr auto;gap:52px}}
+.voz .n{margin:0;font:var(--num);color:var(--numc,var(--acc))}
+.voz p{margin:0;max-width:34em}.voz .q{color:var(--muted);margin-top:8px}
+.redes{display:flex;flex-direction:column;gap:14px}
+.red{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:600 16px/1 "Txt"}
+.red svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.datos{display:grid;gap:44px}
+@media(min-width:900px){.datos{grid-template-columns:1fr 1.1fr;gap:64px}}
+.horas{list-style:none;margin:24px 0 0;padding:0;border-top:var(--rule,1.5px) solid var(--line2,var(--fg));font-variant-numeric:tabular-nums}
+.horas li{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.horas .t{text-align:right}
+.horas .x{color:var(--muted)}
+.horas li.hoy{font-weight:600;color:var(--hoy,var(--fg))}
+.horas li.hoy span:first-child::after{content:" · hoy";font-weight:400}
+.hnota{color:var(--muted);margin:14px 0 0;font-size:15px}
+address{font:var(--addr);font-style:normal;margin:24px 0 6px;text-transform:var(--h2case,none);color:var(--h2c,var(--fg))}
+.zona{color:var(--muted);margin:0 0 22px}
+.mapa{margin-top:24px;border-radius:var(--rc);overflow:hidden;line-height:0;border:1px solid var(--line)}
+.mapa iframe{width:100%;height:320px;border:0;filter:var(--mapf,none)}
+footer{margin-top:clamp(70px,9vw,110px);border-top:1px solid var(--line)}
+footer .wrap{padding:34px 0 120px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;color:var(--muted);font-size:14px}
+footer b{font:var(--foot);color:var(--h2c,var(--fg));text-transform:var(--h2case,none)}
+@media(min-width:900px){footer .wrap{padding-bottom:40px}}
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--barbg,var(--bg));border-top:1px solid var(--line)}
+.barra a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:var(--r);text-decoration:none;font:var(--barfont,600 15px/1 "Txt");letter-spacing:var(--bls,0);text-transform:var(--bcase,none);border:1px solid var(--line);color:var(--fg)}
+.barra a.a{flex:1.5;background:var(--acc);border-color:var(--acc);color:var(--acc-fg)}
+@media(min-width:900px){.barra{display:none}}
+
+.hero{position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:30px;align-items:center;padding:clamp(40px,6vw,84px) 0 clamp(52px,7vw,96px)}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.2fr .8fr;gap:48px}}
+.hero .wrap>*{min-width:0}
+.hero .art{justify-self:center;width:min(380px,80vw)}
+.hero .art svg{width:100%;height:auto;overflow:visible}
+.kick{margin:0 0 16px;font:600 15px/1.3 "Txt";color:var(--kick,var(--acc))}
+.lead{margin:22px 0 26px;font-size:clamp(18px,2vw,21px);max-width:28em;color:var(--leadc,var(--fg))}
+.cards{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+@media(min-width:900px){.cards{grid-template-columns:repeat(var(--cols,3),1fr)}}
+.cards li{background:var(--card);border:1px solid var(--line);border-radius:var(--rc);padding:28px 24px 30px}
+.cards h3{margin:0 0 8px;font:var(--h3)}
+.cards p{margin:0;color:var(--muted)}
+.lst{list-style:none;margin:0;padding:0;border-top:var(--rule,1.5px) solid var(--line2,var(--fg))}
+.lst li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:17px 0;border-bottom:1px solid var(--line)}
+.lst b{font:var(--h3)}
+.lst span{color:var(--muted);font-size:15px;text-align:right;max-width:20em}
+.band{margin-top:clamp(66px,9vw,116px);background:var(--bandbg);color:var(--bandfg)}
+.band .wrap{display:grid;gap:24px;padding:clamp(48px,7vw,86px) 0;align-items:center}
+@media(min-width:900px){.band .wrap{grid-template-columns:1.3fr auto;gap:56px}}
+.band h2{color:var(--bandfg)}
+.band p{margin:14px 0 0;font-size:18px;max-width:30em;opacity:.9}
+.band .btn{background:var(--bandfg);border-color:var(--bandfg);color:var(--bandbg)}
+.two{display:grid;gap:40px;align-items:start}
+@media(min-width:900px){.two{grid-template-columns:1fr 1.1fr;gap:64px}}
+
+.hero .kick{color:#e8a23a}
+:root{--bg:#f8f1e4;--fg:#1e1410;--muted:#6a5a4e;--line:#e6d7bd;--acc:#7a0f14;--acc-fg:#f8f1e4;--on:#2e9d5b;--r:6px;--rc:6px;--card:#fff;
+--bfont:700 16px/1 "Txt";--h2:700 italic clamp(44px,7vw,80px)/.92 "Bon";--h2c:#7a0f14;--h3:700 italic 26px/1.05 "Bon";
+--num:700 italic clamp(100px,14vw,160px)/.8 "Bon";--numc:#7a0f14;--addr:700 clamp(32px,5vw,46px)/1 "Bon";--foot:700 italic 32px/1 "Bon";--bandbg:#1e1410;--bandfg:#f8f1e4;--kick:#7a0f14}
+.hero{background:#1e1410;color:#f8f1e4}
+.hero h1{margin:0;font:700 italic clamp(64px,17vw,200px)/.85 "Bon";color:#f8f1e4;letter-spacing:-.03em}
+.hero .lead{color:#dccfbf}.hero .estado span{color:#ab9c8c}
+.hero .btn.a{background:#c9252b;border-color:#c9252b;color:#fff}.hero .btn.o{border-color:#f8f1e4;color:#f8f1e4}
+.molde{width:100%;height:auto}
+.porciones{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.porciones{grid-template-columns:repeat(4,1fr)}}
+.porciones li{background:#fff;border:1.5px solid #1e1410;padding:22px 18px;border-radius:6px}
+.porciones b{display:block;font:700 italic 26px/1 "Bon";color:#7a0f14;margin-bottom:6px}
+.porciones span{font-size:15px;color:#6a5a4e}
+.locs{display:grid;gap:14px}
+@media(min-width:900px){.locs{grid-template-columns:1fr 1fr}}
+.locs a{display:flex;justify-content:space-between;align-items:center;padding:24px;border:2px solid #7a0f14;border-radius:6px;text-decoration:none;font:700 italic 30px/1 "Bon";color:#7a0f14}
+.locs svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2}
+@media(min-width:900px){.hero h1{font-size:150px}}
+</style>
+</head>
+<body>
+<div class="demo">Versión de muestra</div>
+<header class="hero"><div class="wrap"><div><p class="kick">Bar · Restaurante · Pizzería</p><h1>Bohemia</h1><p class="lead">La mejor pizza al molde de Bahía, entera o al corte. Tu lugar de encuentro en Chiclana 83 y en Av. Alem 1089.</p><p class="estado" id="estado"></p><div class="acc"><a class="btn a" href="https://wa.me/5492915050017?text=Hola%20Bohemia%21%20Quer%C3%ADa%20hacer%20un%20pedido%20/%20reservar.%0A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Pedir o reservar</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Pizzer%C3%ADa%20Bohemia%2C%20Chiclana%2083%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a></div></div><div class="art" aria-hidden="true"><svg class="molde" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="#2e1f18" stroke="#c9252b" stroke-width="8"/><circle cx="150" cy="150" r="112" fill="#f0c45a"/><g stroke="#2e1f18" stroke-width="5"><path d="M150 38v224M38 150h224M71 71l158 158M229 71 71 229"/></g><g fill="#c9252b"><circle cx="120" cy="100" r="11"/><circle cx="190" cy="120" r="11"/><circle cx="110" cy="190" r="11"/><circle cx="180" cy="200" r="11"/><circle cx="150" cy="150" r="9"/></g></svg></div></div></header>
+<main>
+<section class="wrap"><div class="cab"><h2>Pizza al corte</h2><p>Venís, elegís tus porciones favoritas y probás varios sabores en la misma noche.</p></div><ul class="porciones"><li><b>Muzza</b><span>La que nunca falla.</span></li><li><b>Clásicas</b><span>Las de siempre, al molde.</span></li><li><b>De la casa</b><span>Preguntá cuáles salieron hoy.</span></li><li><b>Por porción</b><span>Armá tu plato con varios sabores.</span></li></ul></section>
+<section class="wrap"><div class="cab"><h2>Dos lugares</h2><p>La misma pizza en dos puntos de la ciudad.</p></div><div class="locs"><a href="https://www.google.com/maps/search/?api=1&query=Pizzer%C3%ADa%20Bohemia%2C%20Chiclana%2083%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Chiclana 83<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="https://www.google.com/maps/search/?api=1&query=Pizzer%C3%ADa%20Bohemia%2C%20Av.%20Alem%201089%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Av. Alem 1089<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div></section>
+<div class="band"><div class="wrap"><div><h2>Partidos en Bohemia</h2><p>Los partidos importantes se ven acá, con pizza y amigos. Reservá tu mesa.</p></div><a class="btn a" href="https://wa.me/5492915050017?text=Hola%20Bohemia%21%20Quer%C3%ADa%20hacer%20un%20pedido%20/%20reservar.%0A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Reservar</a></div></div>
+<section class="wrap" id="opiniones">
+  <div class="voz"><p class="n">4,4</p><div><p>de 5 en Google Maps, con más de 1.600 opiniones.</p></div><div class="redes"><a class="red" href="https://www.instagram.com/bohemiapizzeria/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>@bohemiapizzeria</a></div></div>
+</section>
+<section class="wrap" id="visita">
+  <div class="datos">
+    <div><h2>Horarios</h2><ul class="horas"><li data-d="1"><span>Lunes</span><span class="t">11 a 0:30 h</span></li><li data-d="2"><span>Martes</span><span class="t">11 a 0:30 h</span></li><li data-d="3"><span>Miércoles</span><span class="t">11 a 0:30 h</span></li><li data-d="4"><span>Jueves</span><span class="t">11 a 0:30 h</span></li><li data-d="5"><span>Viernes</span><span class="t">11 a 1 h</span></li><li data-d="6"><span>Sábado</span><span class="t">11 a 1 h</span></li><li data-d="0"><span>Domingo</span><span class="t">11 a 0:30 h</span></li></ul><p class="hnota">Horario de Chiclana 83. También estamos en Av. Alem 1089.</p></div>
+    <div><h2>Dónde</h2><address>Chiclana 83</address><p class="zona">Bahía Blanca</p>
+      <div class="acc"><a class="btn a" href="https://www.google.com/maps/search/?api=1&query=Pizzer%C3%ADa%20Bohemia%2C%20Chiclana%2083%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a><a class="btn o" href="tel:+542915050017"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 5-2.2 1.5a11 11 0 0 0 5.2 5.2L16 12.5l5 1.5v3a2 2 0 0 1-2 2C10.7 19 5 13.3 5 5a2 2 0 0 1 2-2z"/></svg>291 505-0017</a></div>
+      <div class="mapa"><iframe title="Mapa de Pizzería Bohemia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Chiclana%2083%2C%20Bah%C3%ADa%20Blanca&z=16&output=embed"></iframe></div></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><b>Pizzería Bohemia</b><span>Chiclana 83, Bahía Blanca · 291 505-0017</span></div></footer>
+<nav class="barra" aria-label="Accesos rápidos"><a class="a" href="https://wa.me/5492915050017?text=Hola%20Bohemia%21%20Quer%C3%ADa%20hacer%20un%20pedido%20/%20reservar.%0A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>WhatsApp</a><a href="tel:+542915050017"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 5-2.2 1.5a11 11 0 0 0 5.2 5.2L16 12.5l5 1.5v3a2 2 0 0 1-2 2C10.7 19 5 13.3 5 5a2 2 0 0 1 2-2z"/></svg>Llamar</a><a href="https://www.google.com/maps/search/?api=1&query=Pizzer%C3%ADa%20Bohemia%2C%20Chiclana%2083%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Llegar</a></nav>
+<script>
+(function(){
+  var S={"0": [[660, 1470]], "1": [[660, 1470]], "2": [[660, 1470]], "3": [[660, 1470]], "4": [[660, 1470]], "5": [[660, 1500]], "6": [[660, 1500]]}, el=document.getElementById('estado'), root=document.documentElement;
+  var hm=function(m){m%=1440;var h=Math.floor(m/60),mm=m%60;return h+(mm?':'+String(mm).padStart(2,'0'):'')+' h'};
+  var D=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Argentina/Buenos_Aires',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  var g=function(t){return p.find(function(x){return x.type===t}).value};
+  var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')], now=(parseInt(g('hour'),10)%24)*60+parseInt(g('minute'),10);
+  var prev=(day+6)%7, open=null;
+  S[day].forEach(function(r){if(now>=r[0]&&now<r[1])open=r[1]});
+  S[prev].forEach(function(r){if(r[1]>1440&&now<r[1]-1440)open=r[1]});
+  if(open!==null){root.classList.add('abierto');var full=S[day].some(function(r){return r[0]===0&&r[1]>=1440});el.innerHTML='<i></i>Abierto ahora <span>· '+(full?'las 24 horas':'hasta las '+hm(open))+'</span>';}
+  else{root.classList.add('cerrado');var t=null;
+    S[day].forEach(function(r){if(t===null&&now<r[0])t='hoy a las '+hm(r[0])});
+    if(t===null){for(var k=1;k<8;k++){var d=(day+k)%7;if(S[d].length){t=(k===1?'mañana':'el '+D[d])+' a las '+hm(S[d][0][0]);break;}}}
+    el.innerHTML='<i></i>Cerrado ahora <span>· abre '+t+'</span>';}
+  var li=document.querySelector('.horas li[data-d="'+day+'"]');if(li)li.classList.add('hoy');
+})();
+</script>
+<script data-goatcounter="https://luchovaschetti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
