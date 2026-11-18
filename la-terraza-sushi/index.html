@@ -1,204 +1,103 @@
-<!DOCTYPE html>
-<html lang="es-AR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0e0c0b">
-<title>La Terraza · Sushi bar en Lavalle 531, Bahía Blanca</title>
-<meta name="description" content="Sushi artesanal en Lavalle 531: barra, take away y delivery. Reservas por WhatsApp y pedidos en la tienda online.">
-<meta property="og:title" content="La Terraza · Sushi bar en Lavalle 531, Bahía Blanca">
-<meta property="og:description" content="Sushi artesanal en Lavalle 531: barra, take away y delivery. Reservas por WhatsApp y pedidos en la tienda online.">
-<meta name="robots" content="noindex,nofollow">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "La Terraza Sushi", "telephone": "+542915137503", "address": {"@type": "PostalAddress", "streetAddress": "Lavalle 531", "addressLocality": "Bahía Blanca", "addressRegion": "Buenos Aires", "addressCountry": "AR"}, "geo": {"@type": "GeoCoordinates", "latitude": -38.716360200000004, "longitude": -62.25513209999999}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 434}, "servesCuisine": "Sushi", "acceptsReservations": true, "sameAs": ["https://www.instagram.com/sushilaterraza/"]}</script>
-<style>
-@font-face{font-family:"Txt";src:url(assets/inter-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+<!DOCTYPE html><html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex"><title>La Terraza Sushi · versión app</title><meta name="theme-color" content="#0e0c0b">
+<style>:root{--bg:#0e0c0b;--fg:#f4ede1;--acc:#c6261c;--accfg:#fff;--line:#2e2824;--muted:#a99f93;--card:#171412;--soft:#231d1a;--outer:#000;--outerfg:#f4ede1;--fh:"Scr";--fhc:none;--fhs:normal}@font-face{font-family:"Txt";src:url(assets/inter-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Txt";src:url(assets/inter-600.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}
 @font-face{font-family:"Scr";src:url(assets/chorus.woff) format("woff");font-weight:500;font-style:italic;font-display:swap}
-@font-face{font-family:"Jp";src:url(assets/cjk.woff) format("woff");font-weight:900;font-style:normal;font-display:swap}
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0}
-img,svg{display:block}
-a{color:inherit}
-:focus-visible{outline:3px solid currentColor;outline-offset:3px}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-.demo{position:fixed;right:0;bottom:84px;z-index:50;background:#fff;color:#111;font:600 11px/1 "Txt",sans-serif;letter-spacing:.04em;padding:7px 12px 7px 10px;border-radius:999px 0 0 999px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
-.ico svg,.btn svg,.barra svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--outer);color:var(--fg);font:400 16px/1.5 "Txt",system-ui,sans-serif}
+.stage{min-height:100vh;display:grid;place-items:start center}
+@media(min-width:900px){.stage{grid-template-columns:1fr 440px;gap:64px;align-items:center;max-width:1100px;margin:0 auto;padding:40px}}
+.pitch{display:none}
+@media(min-width:900px){.pitch{display:block;color:var(--outerfg)}.pitch h1{font:700 64px/.95 var(--fh);font-style:var(--fhs);text-transform:var(--fhc);margin:0 0 16px}.pitch p{font-size:18px;opacity:.85;max-width:24em}}
+.app{width:100%;max-width:440px;min-height:100vh;background:var(--bg);position:relative;padding-bottom:110px}
+@media(min-width:900px){.app{min-height:auto;height:860px;overflow:auto;border-radius:40px;box-shadow:0 40px 100px rgba(0,0,0,.35);border:10px solid #0b0b0b}}
+.top{position:sticky;top:0;z-index:5;background:var(--bg);padding:18px 20px 12px;border-bottom:1px solid var(--line)}
+.brand{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand b{white-space:nowrap;font:700 24px/1 var(--fh);font-style:var(--fhs);text-transform:var(--fhc)}
+.pill{display:inline-flex;align-items:center;gap:6px;font:600 13px/1 "Txt";padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--muted);white-space:nowrap}
+.pill span{display:none}
+.pill i{width:8px;height:8px;border-radius:50%;background:#9a9a9a}
+.abierto .pill i{background:#22a35a}.abierto .pill{color:var(--fg)}
+.tabs{display:flex;gap:6px;margin-top:14px;background:var(--soft);padding:5px;border-radius:14px}
+.tabs button{flex:1;border:0;background:transparent;color:var(--muted);font:600 15px/1 "Txt";padding:11px 6px;border-radius:10px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--acc);color:var(--accfg)}
+.pane{padding:22px 20px}
+.pane[hidden]{display:none}
+.hi{background:var(--acc);color:var(--accfg);border-radius:24px;padding:26px 22px;margin-bottom:18px}
+.hi h2{margin:0;font:700 40px/.95 var(--fh);font-style:var(--fhs);text-transform:var(--fhc)}
+.hi p{margin:10px 0 0;opacity:.9}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;text-decoration:none;color:var(--fg);display:grid;gap:6px;cursor:pointer;font:inherit;text-align:left}
+.hl{display:grid;gap:10px;margin-top:18px}
+.hl h3{margin:0 0 2px;font:600 14px/1 "Txt";color:var(--muted)}
+.hl div{background:var(--soft);border-radius:18px;padding:16px 18px}
+.hl b{display:block;font:700 22px/1.1 var(--fh);font-style:var(--fhs);text-transform:var(--fhc);color:var(--acc)}
+.hl span{font-size:15px;color:var(--fg)}
+.tile svg{width:24px;height:24px;fill:none;stroke:var(--acc);stroke-width:2}
+.tile b{font:600 16px/1.2 "Txt"}
+.tile small{color:var(--muted);font-size:13px}
+.hrs{list-style:none;margin:0;padding:0}
+.hrs li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.hrs li.hoy{font-weight:700;color:var(--acc)}
+.hrs .x{color:var(--muted)}
+.mapa{margin-top:16px;border-radius:18px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3}
+.mapa iframe{width:100%;height:100%;border:0}
+.cta{position:fixed;left:0;right:0;bottom:0;z-index:6;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,var(--bg) 30%)}
+@media(min-width:900px){.cta{position:sticky}}
+.cta a{display:flex;align-items:center;justify-content:center;gap:10px;max-width:408px;margin:0 auto;border-radius:999px;padding:17px;background:#1f9d55;color:#fff;font:700 17px/1 "Txt";text-decoration:none}
+.cta svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.app .fx{background:transparent;border:0;padding:0}
+.app .fx .fw{width:100%;display:block}
+.app .fx .fw>div:first-child{display:none}
+.app .fx .panel{border-radius:20px}
+.demo{position:fixed;right:0;bottom:84px;z-index:7;background:#fff;color:#111;font:600 11px/1 "Txt";padding:6px 10px;border-radius:8px 0 0 8px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
 @media(min-width:900px){.demo{bottom:20px}}
 
-:root{--negro:#0e0c0b;--carbon:#171412;--laca:#c6261c;--salmon:#f2794a;--arroz:#f4ede1;--humo:#a99f93;--linea:#2e2824;--ambar:#e0a748}
-body{background:var(--negro);color:var(--arroz);font:400 17px/1.6 "Txt",system-ui,sans-serif}
-.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
-.btn{display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 24px;border-radius:999px;text-decoration:none;font:600 16px/1 "Txt";border:1.5px solid var(--arroz);transition:background .15s,color .15s,border-color .15s}
-.btn.a{background:var(--laca);border-color:var(--laca);color:#fff}.btn.a:hover{background:#a81e15;border-color:#a81e15}
-.btn.o:hover{background:var(--arroz);color:var(--negro)}
-.acc{display:flex;flex-wrap:wrap;gap:12px}
-/* hero */
-.hero{position:relative;overflow:hidden;padding:clamp(40px,7vw,90px) 0 clamp(56px,8vw,100px);background:radial-gradient(120% 90% at 85% 40%,#2a1410 0,var(--negro) 60%)}
-.hero .wrap{display:grid;gap:40px;align-items:center}
-@media(min-width:900px){.hero .wrap{grid-template-columns:1.15fr .85fr}}
-.kana{position:absolute;right:clamp(10px,2vw,28px);top:clamp(70px,9vw,110px);writing-mode:vertical-rl;font:900 clamp(26px,3vw,36px)/1 "Jp";color:var(--laca);letter-spacing:.2em;opacity:.9}
-.tag{margin:0 0 18px;font:600 14px/1 "Txt";letter-spacing:.2em;text-transform:uppercase;color:var(--salmon)}
-.hero h1{margin:0;font:500 italic clamp(84px,17vw,190px)/.82 "Scr",serif;letter-spacing:-.01em}
-.hero h1 span{display:block;padding-left:.55em}
-.lead{margin:26px 0 0;font-size:clamp(18px,2vw,21px);max-width:28em;color:#d9d0c4}
-.estado{margin:24px 0 24px;font:600 16px/1.3 "Txt"}.estado span{font-weight:400;color:var(--humo)}
-.estado i{display:inline-block;width:10px;height:10px;border-radius:50%;background:#5c544d;margin-right:10px;vertical-align:1px}
-.abierto .estado i{background:var(--salmon);box-shadow:0 0 0 4px rgba(242,121,74,.22)}
-.koi{width:min(440px,82vw);height:auto;justify-self:center}
-.nada{transform-origin:200px 200px;animation:gira 60s linear infinite}
-@keyframes gira{to{transform:rotate(360deg)}}
-/* formas */
-section{padding:clamp(70px,9vw,120px) 0 0}
-h2{margin:0;font:500 italic clamp(52px,8vw,88px)/.9 "Scr",serif}
-.cab{display:grid;gap:14px;margin-bottom:40px}
-@media(min-width:900px){.cab{grid-template-columns:1fr 1fr;align-items:end}}
-.cab p{margin:0;color:var(--humo);max-width:31em}
-.formas{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--linea);border:1px solid var(--linea)}
-@media(min-width:900px){.formas{grid-template-columns:repeat(3,1fr)}}
-.formas li{background:var(--carbon);padding:30px 26px 32px;display:flex;flex-direction:column;gap:12px}
-.formas small{font:600 13px/1 "Txt";letter-spacing:.18em;text-transform:uppercase;color:var(--salmon)}
-.formas h3{margin:0;font:600 30px/1.05 "Txt";letter-spacing:-.02em}
-.formas p{margin:0;color:var(--humo);font-size:16px}
-.formas .btn{margin-top:auto;align-self:flex-start}
-.desc{margin:16px 0 0;color:var(--humo);font-size:15px}
-.desc b{color:var(--salmon);font-weight:600}
-/* combinados */
-.combos{display:grid;gap:18px}
-@media(min-width:900px){.combos{grid-template-columns:repeat(3,1fr)}}
-.combo{border-top:2px solid var(--laca);padding-top:18px}
-.combo .n{font:300 clamp(110px,13vw,160px)/.8 "Txt";letter-spacing:-.06em;color:var(--arroz);font-variant-numeric:tabular-nums}
-.combo .n small{font:500 italic 30px/1 "Scr";letter-spacing:0;color:var(--salmon);margin-left:8px}
-.combo p{margin:14px 0 0;color:var(--humo);max-width:22em}
-.promo{margin-top:34px;display:grid;gap:18px;background:var(--arroz);color:var(--negro);border-radius:22px;padding:clamp(26px,4vw,40px)}
-@media(min-width:900px){.promo{grid-template-columns:auto 1fr auto;align-items:center;gap:40px}}
-.promo h3{margin:0;font:500 italic clamp(40px,5vw,56px)/.9 "Scr"}
-.promo ul{margin:0;padding:0;list-style:none;display:grid;gap:4px}
-.promo li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--laca);margin-right:10px;vertical-align:2px}
-.promo .btn.o{border-color:var(--negro);color:var(--negro)}.promo .btn.o:hover{background:var(--negro);color:var(--arroz)}
-/* rolls */
-.rolls{display:grid;gap:40px}
-@media(min-width:900px){.rolls{grid-template-columns:1fr 1.2fr;gap:70px}}
-.carta{list-style:none;margin:0;padding:0;border-top:1px solid var(--linea)}
-.carta li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:17px 0;border-bottom:1px solid var(--linea)}
-.carta b{font:600 20px/1.2 "Txt"}
-.carta span{color:var(--humo);font-size:15px;text-align:right}
-.veg{margin-top:26px;padding:22px 24px;border:1px solid var(--linea);border-radius:16px;color:var(--humo)}
-.veg b{color:var(--arroz);display:block;margin-bottom:4px}
-/* barra */
-.bar{margin-top:clamp(70px,9vw,120px);background:linear-gradient(160deg,#3a2216 0,#1c110b 55%,var(--negro) 100%);padding:clamp(60px,8vw,100px) 0;border-top:1px solid #4a2c1c;border-bottom:1px solid #4a2c1c}
-.bar .wrap{display:grid;gap:30px;align-items:end}
-@media(min-width:900px){.bar .wrap{grid-template-columns:1.2fr 1fr}}
-.bar h2{color:var(--ambar)}
-.bar p{margin:18px 0 0;color:#dacbb8;max-width:30em;font-size:18px}
-.bar .num{font:300 14px/1.4 "Txt";color:var(--humo);margin-top:14px}
-/* opiniones */
-.voz{display:grid;gap:22px;align-items:center;border-top:1px solid var(--linea);padding-top:30px}
-@media(min-width:900px){.voz{grid-template-columns:auto 1fr auto;gap:52px}}
-.voz .n{margin:0;font:300 clamp(96px,13vw,150px)/.8 "Txt";letter-spacing:-.06em;color:var(--salmon)}
-.voz p{margin:0;max-width:34em}.voz .q{color:var(--humo);margin-top:8px}
-.ig{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:600 16px/1 "Txt"}
-.ig svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8}
-/* visita */
-.datos{display:grid;gap:44px}
-@media(min-width:900px){.datos{grid-template-columns:1fr 1.1fr;gap:64px}}
-.horas{list-style:none;margin:24px 0 0;padding:0;border-top:1px solid var(--arroz);font-variant-numeric:tabular-nums}
-.horas li{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--linea)}
-.horas .x{color:var(--humo)}
-.horas li.hoy{color:var(--salmon);font-weight:600}
-.horas li.hoy span:first-child::after{content:" · hoy";font-weight:400}
-address{font:600 clamp(34px,5vw,48px)/1 "Txt";letter-spacing:-.03em;font-style:normal;margin:24px 0 6px}
-.zona{color:var(--humo);margin:0 0 22px}
-.mapa{margin-top:24px;border-radius:18px;overflow:hidden;line-height:0;border:1px solid var(--linea)}
-.mapa iframe{width:100%;height:320px;border:0;filter:grayscale(1) invert(.92) contrast(.9)}
-footer{margin-top:clamp(70px,9vw,110px);border-top:1px solid var(--linea)}
-footer .wrap{padding:34px 0 120px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;color:var(--humo);font-size:14px}
-footer b{font:500 italic 40px/1 "Scr";color:var(--arroz)}
-@media(min-width:900px){footer .wrap{padding-bottom:40px}}
-.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(14,12,11,.94);backdrop-filter:blur(8px);border-top:1px solid var(--linea)}
-.barra a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:999px;text-decoration:none;font:600 15px/1 "Txt";border:1px solid var(--linea)}
-.barra a.a{flex:1.5;background:var(--laca);border-color:var(--laca);color:#fff}
-@media(min-width:900px){.barra{display:none}}
-
-</style>
-</head>
-<body>
-<div class="demo">Versión de muestra</div>
-<header class="hero">
-<div class="kana" aria-hidden="true">寿司</div>
-<div class="wrap">
-  <div><p class="tag">Sushi bar · Lavalle 531</p>
-    <h1>La <span>Terraza</span></h1>
-    <p class="lead">Sushi artesanal con pescado cortado en el momento. Para comer en la barra, retirar o recibir en casa.</p>
-    <p class="estado" id="estado"></p>
-    <div class="acc"><a class="btn a" href="https://wa.me/5492914227856?text=Hola%20La%20Terraza%21%20Quer%C3%ADa%20reservar%20en%20la%20barra.%0AD%C3%ADa%3A%0AHora%3A%0ACu%C3%A1ntos%20somos%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Reservar en la barra</a><a class="btn o" href="https://menu.fu.do/sushiterra" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Pedir online</a></div></div>
-  <svg class="koi" viewBox="0 0 400 400" aria-hidden="true">
-<circle cx="200" cy="200" r="192" fill="none" stroke="#c6261c" stroke-width="5"/>
-<circle cx="200" cy="200" r="176" fill="none" stroke="#c6261c" stroke-width="1.2" opacity=".6"/>
-<g class="nada">
-<g transform="rotate(0 200 200)">
-<path d="M200 70c46 6 78 40 80 86 1 26-12 48-34 60-14 8-30 8-44 2 22-4 38-20 40-42 3-36-20-70-42-106z" fill="#f2794a"/>
-<path d="M200 70c-10 4-22 2-30-6 4 12 14 20 26 22M200 70c6-10 18-16 30-14-10 6-18 14-22 24" fill="#f2794a"/>
-<circle cx="250" cy="122" r="3.4" fill="#0e0c0b"/>
-<path d="M228 104c10 10 14 24 12 38M210 150c8 6 18 8 28 6" fill="none" stroke="#c6261c" stroke-width="3" stroke-linecap="round"/>
-</g>
-<g transform="rotate(180 200 200)">
-<path d="M200 70c46 6 78 40 80 86 1 26-12 48-34 60-14 8-30 8-44 2 22-4 38-20 40-42 3-36-20-70-42-106z" fill="#f4ede1"/>
-<path d="M200 70c-10 4-22 2-30-6 4 12 14 20 26 22M200 70c6-10 18-16 30-14-10 6-18 14-22 24" fill="#f4ede1"/>
-<circle cx="250" cy="122" r="3.4" fill="#0e0c0b"/>
-<path d="M228 104c10 10 14 24 12 38M210 150c8 6 18 8 28 6" fill="none" stroke="#c6261c" stroke-width="3" stroke-linecap="round"/>
-</g></g>
-</svg>
-</div></header>
-<main>
-<section class="wrap" id="como">
-  <div class="cab"><h2>Tres formas</h2><p>Elegí cómo lo querés. La carta es la misma en la barra, para llevar y con delivery.</p></div>
-  <ul class="formas">
-    <li><small>En la barra</small><h3>Sentate a comer</h3><p>Sushi, tragos y sake en Lavalle 531. Las reservas son por WhatsApp.</p><a class="btn a" href="https://wa.me/5492914227856?text=Hola%20La%20Terraza%21%20Quer%C3%ADa%20reservar%20en%20la%20barra.%0AD%C3%ADa%3A%0AHora%3A%0ACu%C3%A1ntos%20somos%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Reservar</a></li>
-    <li><small>Take away</small><h3>Pedí y pasá a buscar</h3><p>Armás el pedido en la tienda online y lo retirás listo, sin esperar.</p><a class="btn o" href="https://menu.fu.do/sushiterra" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Tienda online</a></li>
-    <li><small>Delivery</small><h3>Te lo llevamos</h3><p>Desde la misma tienda, o escribinos por WhatsApp si tenés dudas con el pedido.</p><a class="btn o" href="https://wa.me/5492915137503?text=Hola%20La%20Terraza%21%20Quer%C3%ADa%20hacer%20un%20pedido.%0APara%20retirar%20/%20delivery%3A%0AQu%C3%A9%20quiero%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Consultar</a></li>
-  </ul>
-  <p class="desc"><b>10% de descuento</b> pagando en efectivo, para retirar y delivery.</p>
-</section>
-<section class="wrap" id="combinados">
-  <div class="cab"><h2>Combinados</h2><p>Clásicos, especiales y vegetarianos, en tres tamaños. Para uno, para dos o para la mesa entera.</p></div>
-  <div class="combos">
-    <div class="combo"><div class="n">12<small>piezas</small></div><p>Para uno con hambre o para probar. Hay versión vegetariana.</p></div>
-    <div class="combo"><div class="n">24<small>piezas</small></div><p>El de dos. Incluye el clásico todo salmón.</p></div>
-    <div class="combo"><div class="n">36<small>piezas</small></div><p>Para compartir con amigos, con piezas especiales.</p></div>
-  </div>
-  <div class="promo"><h3>Promo de la semana</h3>
-    <ul><li>4 rolls de salmón fresco y queso crema</li><li>4 rolls de salmón, palta y queso crema</li><li>2 nigiris de salmón ahumado</li><li>2 geishas de salmón</li></ul>
-    <a class="btn o" href="https://menu.fu.do/sushiterra" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Pedirla</a></div>
-</section>
-<section class="wrap" id="rolls">
-  <div class="rolls">
-    <div><h2>Rolls de la carta</h2><p class="desc" style="font-size:17px;max-width:24em">Cada roll viene de 8 piezas. Si no sabés qué elegir, preguntá en la barra: te arman la tabla a tu gusto.</p>
-      <div class="veg"><b>Opciones vegetarianas</b>Tofu, hongos, zucchini, espinaca, tamago y volcán vegetariano.</div></div>
-    <ul class="carta"><li><b>Volcán de maracuyá</b><span>Agridulce, el que piden los que vuelven.</span></li><li><b>Skin especial</b><span>Piel de salmón crocante.</span></li><li><b>Kani especial</b><span>Kanikama, palta y queso.</span></li><li><b>Langostino, palta y queso</b><span>Un clásico que no falla.</span></li><li><b>Tuna cheese</b><span>Atún y queso crema.</span></li><li><b>California cheese</b><span>Para empezar sin riesgos.</span></li></ul>
-  </div>
-</section>
-<div class="bar"><div class="wrap">
-  <div><h2>La barra</h2><p>Botellas a la vista, luz baja y el chef cortando adelante tuyo. Para una cena tranquila o para arrancar la noche con un trago.</p></div>
-  <div><a class="btn a" href="https://wa.me/5492914227856?text=Hola%20La%20Terraza%21%20Quer%C3%ADa%20reservar%20en%20la%20barra.%0AD%C3%ADa%3A%0AHora%3A%0ACu%C3%A1ntos%20somos%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Reservar lugar</a><p class="num">Reservas al 291 422-7856</p></div>
-</div></div>
-<section class="wrap" id="opiniones">
-  <div class="voz"><p class="n">4,7</p>
-    <div><p>de 5 en Google Maps, con más de 400 opiniones.</p><p class="q">Lo que más se repite: la frescura del pescado, la atención y lo lindo que está el lugar.</p></div>
-    <a class="ig" href="https://www.instagram.com/sushilaterraza/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>@sushilaterraza</a></div>
-</section>
-<section class="wrap" id="visita">
-  <div class="datos">
-    <div><h2>Horarios</h2><ul class="horas"><li data-d="1"><span>Lunes</span><span>18:30 a 23:30 h</span></li><li data-d="2"><span>Martes</span><span>18:30 a 23:30 h</span></li><li data-d="3"><span>Miércoles</span><span>18:30 a 23:30 h</span></li><li data-d="4"><span>Jueves</span><span>18:30 a 23:30 h</span></li><li data-d="5"><span>Viernes</span><span>18:30 a 23:30 h</span></li><li data-d="6"><span>Sábado</span><span>18:30 a 23:30 h</span></li><li data-d="0"><span>Domingo</span><span class=x>Cerrado</span></li></ul></div>
-    <div><h2>Dónde</h2><address>Lavalle 531</address><p class="zona">Centro, Bahía Blanca</p>
-      <div class="acc"><a class="btn a" href="https://www.google.com/maps/search/?api=1&query=La%20Terraza%20Sushi%2C%20Lavalle%20531%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a><a class="btn o" href="tel:+542915137503"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 5-2.2 1.5a11 11 0 0 0 5.2 5.2L16 12.5l5 1.5v3a2 2 0 0 1-2 2C10.7 19 5 13.3 5 5a2 2 0 0 1 2-2z"/></svg>291 513-7503</a></div>
-      <div class="mapa"><iframe title="Mapa de La Terraza" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-38.716360200000004,-62.25513209999999&z=16&output=embed"></iframe></div></div>
-  </div>
-</section>
-</main>
-<footer><div class="wrap"><b>La Terraza</b><span>Sushi bar · Lavalle 531, Bahía Blanca · Pedidos 291 513-7503 · Reservas 291 422-7856</span></div></footer>
-<nav class="barra" aria-label="Accesos rápidos"><a class="a" href="https://wa.me/5492914227856?text=Hola%20La%20Terraza%21%20Quer%C3%ADa%20reservar%20en%20la%20barra.%0AD%C3%ADa%3A%0AHora%3A%0ACu%C3%A1ntos%20somos%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Reservar</a><a href="https://menu.fu.do/sushiterra" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Pedir</a><a href="https://www.google.com/maps/search/?api=1&query=La%20Terraza%20Sushi%2C%20Lavalle%20531%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Llegar</a></nav>
-<script>
+.fx{--f-r:16px;background:var(--fbg);color:var(--ffg);padding:clamp(52px,7vw,92px) 0;border-top:1px solid var(--fline);border-bottom:1px solid var(--fline)}
+.fx .fw{width:min(1080px,100% - 40px);margin-inline:auto;display:grid;gap:30px}
+@media(min-width:900px){.fx .fw{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}}
+.fx h2{margin:0;font:700 clamp(40px,6vw,68px)/.95 var(--fh);font-style:var(--fhs);text-transform:var(--fhc);letter-spacing:-.01em;color:var(--ffg)}
+.fx .fp{margin:16px 0 0;color:var(--fmuted);font-size:17px;max-width:26em}
+.fx .fw>*,.fx .panel>*{min-width:0}
+.fx .panel{min-width:0;background:var(--fcard);border:1px solid var(--fline);border-radius:22px;padding:clamp(18px,3vw,28px);display:grid;gap:18px}
+.fx .lbl{font:600 14px/1 "Txt";color:var(--fmuted);margin:0 0 10px}
+.fx .it{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--fline)}
+.fx .it:last-child{border:0}
+.fx .it b{display:block;font:600 17px/1.2 "Txt"}
+.fx .it small{color:var(--fmuted);font-size:14px}
+.fx .st{display:flex;align-items:center;gap:6px}
+.fx .st button{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--fline);background:transparent;color:var(--ffg);font:600 20px/1 "Txt";cursor:pointer}
+.fx .st button.p{background:var(--facc);border-color:var(--facc);color:var(--faccfg)}
+.fx .st output{min-width:26px;text-align:center;font:700 18px/1 "Txt"}
+.fx .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.fx .chips::-webkit-scrollbar{display:none}
+.fx .chip{flex:0 0 auto;border:1.5px solid var(--fline);background:transparent;color:var(--ffg);border-radius:14px;padding:10px 14px;font:600 15px/1.15 "Txt";cursor:pointer;text-align:center;min-width:64px}
+.fx .chip small{display:block;font-weight:400;font-size:12px;color:var(--fmuted)}
+.fx .chip[aria-pressed=true]{background:var(--facc);border-color:var(--facc);color:var(--faccfg)}
+.fx .chip[aria-pressed=true] small{color:var(--faccfg);opacity:.8}
+.fx .chip:disabled{opacity:.35;cursor:not-allowed}
+.fx .row2{display:grid;gap:14px}
+@media(min-width:600px){.fx .row2{grid-template-columns:1fr 1fr}}
+.fx label.f{display:grid;gap:8px;font:600 14px/1 "Txt";color:var(--fmuted)}
+.fx input,.fx select,.fx textarea{font:400 16px/1.3 "Txt";color:var(--ffg);background:var(--fsoft);border:1.5px solid var(--fline);border-radius:12px;padding:12px 14px;width:100%;box-sizing:border-box}
+.fx textarea{min-height:70px;resize:vertical}
+.fx .go{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:999px;padding:17px 22px;background:var(--facc);color:var(--faccfg);font:700 17px/1 "Txt";cursor:pointer}
+.fx .go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.fx .go[disabled]{opacity:.45;cursor:not-allowed}
+.fx .hint{margin:0;font-size:13px;color:var(--fmuted);text-align:center}
+.fx .sum{font:600 15px/1.3 "Txt"}
+.fx :focus-visible{outline:3px solid var(--facc);outline-offset:2px}
+</style><script data-goatcounter="https://luchovaschetti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head>
+<body><div class="stage"><div class="pitch"><h1>La Terraza Sushi</h1><p>Sushi en Lavalle 531. Así se vería tu web en el celular de tus clientes: abrís, pedís o reservás, y te llega el mensaje armado por WhatsApp.</p></div>
+<div class="app"><header class="top"><div class="brand"><b>La Terraza</b><span class="pill" id="estado"><i></i>…</span></div>
+<div class="tabs" role="tablist"><button role="tab" aria-selected="true" aria-controls="p1">Inicio</button><button role="tab" aria-selected="false" aria-controls="p2">Reservar</button><button role="tab" aria-selected="false" aria-controls="p3">Info</button></div></header>
+<main><section class="pane" id="p1"><div class="hi"><h2>La Terraza Sushi</h2><p>Sushi en Lavalle 531 · Lavalle 531</p></div><div class="tiles"><button type="button" class="tile" data-go="p2"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><b>Reservar</b><small>Por WhatsApp, en un minuto</small></button><button type="button" class="tile" data-go="p3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><b>Dónde y cuándo</b><small>Lavalle 531</small></button><a class="tile" href="https://menu.fu.do/sushiterra" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg><b>Ver la carta</b><small>Carta online</small></a><a class="tile" href="https://www.instagram.com/terrazasushi.bb/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></svg><b>Instagram</b><small>@terrazasushi.bb</small></a></div><div class="hl"><h3>Para tener en cuenta</h3><div><b>Combos de 12, 24 y 36 piezas</b><span>Para uno, para dos o para compartir.</span></div><div><b>Promo de la semana</b><span>Rolls de salmón, nigiris y geishas.</span></div></div></section>
+<section class="pane" id="p2" hidden><section class="fx" id="accion" style="--fbg:#0e0c0b;--ffg:#f4ede1;--facc:#c6261c;--faccfg:#fff;--fline:#2e2824;--fmuted:#a99f93;--fcard:#171412;--fsoft:#231d1a;--fh:&quot;Scr&quot;;--fhc:none;--fhs:normal" data-cfg='{&quot;mode&quot;: &quot;reserva&quot;, &quot;wa&quot;: &quot;2914227856&quot;, &quot;short&quot;: &quot;La Terraza&quot;, &quot;sched&quot;: {&quot;0&quot;: [], &quot;1&quot;: [[1110, 1410]], &quot;2&quot;: [[1110, 1410]], &quot;3&quot;: [[1110, 1410]], &quot;4&quot;: [[1110, 1410]], &quot;5&quot;: [[1110, 1410]], &quot;6&quot;: [[1110, 1410]]}, &quot;unit&quot;: &quot;&quot;, &quot;exl&quot;: &quot;&quot;}'><div class="fw"><div><h2>Reservá tu mesa</h2><p class="fp">Elegí el día, la hora y cuántos son. Te llega por WhatsApp y te confirmamos la mesa.</p></div><form class="panel" onsubmit="return false"><div><p class="lbl">Día</p><div class="chips dsel"></div></div><div><p class="lbl">Horario</p><div class="chips hrsel"><p class="hint" style="text-align:left">Primero elegí el día.</p></div></div><div><p class="lbl">Cuántos son</p><div class="st pers"><button type="button" class="m" aria-label="Uno menos">−</button><output>2</output><button type="button" class="p" aria-label="Uno más">+</button></div></div><div class="row2"><label class="f">A nombre de<input class="nom" autocomplete="name" placeholder="Tu nombre"></label><label class="f">Algo más<textarea class="nota" placeholder="Opcional"></textarea></label></div><p class="sum"></p><button type="button" class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Pedir la reserva por WhatsApp</button><p class="hint">Se abre WhatsApp con el mensaje armado. No se cobra nada desde la web.</p></form></div></section></section>
+<section class="pane" id="p3" hidden><ul class="hrs"><li data-d="1"><span>Lunes</span><span class="">18:30 a 23:30 h</span></li><li data-d="2"><span>Martes</span><span class="">18:30 a 23:30 h</span></li><li data-d="3"><span>Miércoles</span><span class="">18:30 a 23:30 h</span></li><li data-d="4"><span>Jueves</span><span class="">18:30 a 23:30 h</span></li><li data-d="5"><span>Viernes</span><span class="">18:30 a 23:30 h</span></li><li data-d="6"><span>Sábado</span><span class="">18:30 a 23:30 h</span></li><li data-d="0"><span>Domingo</span><span class="x">Cerrado</span></li></ul><div class="mapa"><iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=Lavalle%20531%2C%20Bah%C3%ADa%20Blanca&z=16&output=embed"></iframe></div>
+<div class="tiles" style="margin-top:14px"><a class="tile" href="https://www.google.com/maps/search/?api=1&query=La%20Terraza%20Sushi%2C%20Lavalle%20531%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><b>Cómo llegar</b><small>Abrir en Maps</small></a><a class="tile" href="tel:+542914227856"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg><b>Llamar</b><small>291 422-7856</small></a></div></section></main>
+<div class="cta"><a href="https://wa.me/5492914227856?text=Hola%20La%20Terraza%21%20Quer%C3%ADa%20hacer%20una%20consulta." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Escribinos por WhatsApp</a></div></div></div>
+<div class="demo">Versión de muestra</div><script>
 (function(){
   var S={"0": [], "1": [[1110, 1410]], "2": [[1110, 1410]], "3": [[1110, 1410]], "4": [[1110, 1410]], "5": [[1110, 1410]], "6": [[1110, 1410]]}, el=document.getElementById('estado'), root=document.documentElement;
   var hm=function(m){m%=1440;var h=Math.floor(m/60),mm=m%60;return h+(mm?':'+String(mm).padStart(2,'0'):'')+' h'};
@@ -209,14 +108,47 @@ footer b{font:500 italic 40px/1 "Scr";color:var(--arroz)}
   var prev=(day+6)%7, open=null;
   S[day].forEach(function(r){if(now>=r[0]&&now<r[1])open=r[1]});
   S[prev].forEach(function(r){if(r[1]>1440&&now<r[1]-1440)open=r[1]});
-  if(open!==null){root.classList.add('abierto');el.innerHTML='<i></i>Abierto ahora <span>· hasta las '+hm(open)+'</span>';}
+  if(open!==null){root.classList.add('abierto');var full=S[day].some(function(r){return r[0]===0&&r[1]>=1440});el.innerHTML='<i></i>Abierto ahora <span>· '+(full?'las 24 horas':'hasta las '+hm(open))+'</span>';}
   else{root.classList.add('cerrado');var t=null;
     S[day].forEach(function(r){if(t===null&&now<r[0])t='hoy a las '+hm(r[0])});
     if(t===null){for(var k=1;k<8;k++){var d=(day+k)%7;if(S[d].length){t=(k===1?'mañana':'el '+D[d])+' a las '+hm(S[d][0][0]);break;}}}
     el.innerHTML='<i></i>Cerrado ahora <span>· abre '+t+'</span>';}
   var li=document.querySelector('.horas li[data-d="'+day+'"]');if(li)li.classList.add('hoy');
 })();
-</script>
-<script data-goatcounter="https://luchovaschetti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
-</html>
+</script><script>
+(function(){document.querySelectorAll('.fx').forEach(function(fx){
+var D=JSON.parse(fx.getAttribute('data-cfg'));var q=function(s){return fx.querySelector(s)};
+var dias=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+function hm(m){m=m%1440;var h=Math.floor(m/60),mi=m%60;return h+':'+(mi<10?'0':'')+mi}
+if(D.mode==='pedido'){
+ var qty={};fx.querySelectorAll('.it').forEach(function(r){var k=r.getAttribute('data-k');qty[k]=0;var o=r.querySelector('output');
+  r.querySelector('.m').onclick=function(){qty[k]=Math.max(0,qty[k]-1);o.textContent=qty[k];upd()};
+  r.querySelector('.p').onclick=function(){qty[k]++;o.textContent=qty[k];upd()}});
+ var modo='Retiro en el local';fx.querySelectorAll('[data-modo]').forEach(function(b){b.onclick=function(){modo=b.getAttribute('data-modo');fx.querySelectorAll('[data-modo]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});q('.dir').hidden=modo.indexOf('Env')<0}});
+ function upd(){var n=0;for(var k in qty)n+=qty[k];q('.go').disabled=!n;q('.sum').textContent=n?('Tu pedido: '+n+' '+D.unit):'Todavía no elegiste nada'}
+ q('.go').onclick=function(){var l=[];for(var k in qty)if(qty[k])l.push('• '+qty[k]+' '+k);
+  var t='Hola '+D.short+'! Quiero hacer este pedido:\n'+l.join('\n');var ex=q('.ex');if(ex)t+='\n'+D.exl+': '+ex.value;
+  t+='\n\n'+modo;if(modo.indexOf('Env')>=0&&q('.dir input').value)t+=': '+q('.dir input').value;
+  var cu=q('.cuando').value;if(cu)t+='\nPara: '+cu;var no=q('.nom').value;if(no)t+='\nA nombre de: '+no;var nt=q('.nota').value;if(nt)t+='\nNota: '+nt;
+  window.open('https://wa.me/549'+D.wa+'?text='+encodeURIComponent(t),'_blank')};upd();
+}else{
+ var now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Argentina/Buenos_Aires'}));var sel=null,hora=null,pers=2;
+ var cd=q('.dsel');for(var i=0;i<10;i++){(function(i){var d=new Date(now);d.setDate(now.getDate()+i);var r=D.sched[d.getDay()]||[];
+  var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed','false');
+  b.innerHTML=(i===0?'Hoy':i===1?'Mañana':dias[d.getDay()].slice(0,3).replace(/^./,function(c){return c.toUpperCase()}))+'<small>'+d.getDate()+'/'+(d.getMonth()+1)+'</small>';
+  if(!r.length){b.disabled=true;b.title='Cerrado'}
+  b.onclick=function(){sel={d:d,r:r,i:i};cd.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b)});horas()};cd.appendChild(b)})(i)}
+ function horas(){var ch=q('.hrsel');ch.innerHTML='';hora=null;var nm=now.getHours()*60+now.getMinutes();
+  sel.r.forEach(function(rg){for(var m=Math.ceil(rg[0]/30)*30;m<=rg[1]-60;m+=30){if(sel.i===0&&m<nm+30)continue;(function(m){var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed','false');b.textContent=hm(m);
+   b.onclick=function(){hora=hm(m);ch.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b)});upd()};ch.appendChild(b)})(m)}});
+  if(!ch.children.length)ch.innerHTML='<p class="hint" style="text-align:left">No quedan horarios para ese día.</p>';upd()}
+ var po=q('.pers output');q('.pers .m').onclick=function(){pers=Math.max(1,pers-1);po.textContent=pers;upd()};q('.pers .p').onclick=function(){pers=Math.min(30,pers+1);po.textContent=pers;upd()};
+ function upd(){q('.go').disabled=!(sel&&hora);q('.sum').textContent=sel&&hora?(dias[sel.d.getDay()]+' '+sel.d.getDate()+'/'+(sel.d.getMonth()+1)+' a las '+hora+' · '+pers+(pers>1?' personas':' persona')):'Elegí día y horario'}
+ q('.go').onclick=function(){var t='Hola '+D.short+'! Quiero reservar una mesa.\nDía: '+dias[sel.d.getDay()]+' '+sel.d.getDate()+'/'+(sel.d.getMonth()+1)+'\nHora: '+hora+'\nSomos: '+pers;
+  var no=q('.nom').value;if(no)t+='\nA nombre de: '+no;var nt=q('.nota').value;if(nt)t+='\nNota: '+nt;
+  window.open('https://wa.me/549'+D.wa+'?text='+encodeURIComponent(t),'_blank')};upd();
+}})})();
+
+document.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected',x===b)});document.querySelectorAll('.pane').forEach(function(p){p.hidden=p.id!==b.getAttribute('aria-controls')})}});
+document.querySelectorAll('[data-go]').forEach(function(a){a.onclick=function(){document.querySelector('.tabs [aria-controls='+a.getAttribute('data-go')+']').click();window.scrollTo(0,0)}});
+</script></body></html>
