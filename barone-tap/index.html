@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0d0d0d">
-<title>Barone Tap Room · Cervecería en Av. Alem 560, Bahía Blanca</title>
-<meta name="description" content="Canillas, burgers y cocina hasta las 0:30. Todos los días desde las 18. Take away y delivery.">
-<meta property="og:title" content="Barone Tap Room · Cervecería en Av. Alem 560, Bahía Blanca">
-<meta property="og:description" content="Canillas, burgers y cocina hasta las 0:30. Todos los días desde las 18. Take away y delivery.">
+<meta name="theme-color" content="#0b0b0b">
+<title>Barone Tap Room · Av. Alem 560, Bahía Blanca</title>
+<meta name="description" content="Canillas, burgers y cocina hasta las 0:30. Birras a precio especial de 18 a 21. Reservá por WhatsApp. Av. Alem 560, Bahía Blanca.">
+<meta property="og:title" content="Barone Tap Room · Av. Alem 560, Bahía Blanca">
+<meta property="og:description" content="Canillas, burgers y cocina hasta las 0:30. Birras a precio especial de 18 a 21. Reservá por WhatsApp. Av. Alem 560, Bahía Blanca.">
 <meta name="robots" content="noindex,nofollow">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BarOrPub", "name": "Barone Tap Room", "telephone": "+542915115121", "address": {"@type": "PostalAddress", "streetAddress": "Av. Alem 560", "addressLocality": "Bahía Blanca", "addressRegion": "Buenos Aires", "addressCountry": "AR"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.2, "reviewCount": 3491}, "sameAs": ["https://www.instagram.com/barone.tap/"]}</script>
 <style>
@@ -96,32 +96,95 @@ footer b{font:var(--foot);color:var(--h2c,var(--fg));text-transform:var(--h2case
 .two{display:grid;gap:40px;align-items:start}
 @media(min-width:900px){.two{grid-template-columns:1fr 1.1fr;gap:64px}}
 
-:root{--bg:#0d0d0d;--fg:#f2f2f2;--muted:#9a9a9a;--line:#262626;--acc:#e3201b;--acc-fg:#fff;--on:#e3201b;--r:2px;--rc:2px;--card:#151515;
---bfont:700 16px/1 "Cnd";--bls:.08em;--bcase:uppercase;--h2:700 clamp(50px,8.4vw,96px)/.85 "Cnd";--h2case:uppercase;--h3:700 28px/1 "Cnd";
---num:700 clamp(100px,14vw,160px)/.8 "Cnd";--numc:#e3201b;--addr:700 clamp(36px,5.4vw,56px)/.95 "Cnd";--foot:700 34px/1 "Cnd";--mapf:grayscale(1) invert(.92);--bandbg:#e3201b;--bandfg:#0d0d0d;--kick:#9a9a9a;--hoy:#e3201b;--barbg:rgba(13,13,13,.95)}
-.hero h1{margin:0;font:700 clamp(90px,25vw,290px)/.78 "Cnd";color:#e3201b;letter-spacing:-.01em;text-transform:uppercase}
-.hero .tag{font:900 clamp(22px,3vw,30px)/1.1 "Txt";letter-spacing:-.02em;margin:18px 0 0}
-.nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin:24px 0 0;font:700 18px/1 "Cnd";letter-spacing:.06em}
-.nav a{text-decoration:none;color:#9a9a9a}.nav a:hover{color:#fff}
-.canillas{display:flex;gap:10px;align-items:flex-end;justify-content:center;height:100%}
-.canillas div{width:34px;border-radius:6px 6px 2px 2px;background:#1e1e1e;border:2px solid #333;position:relative}
-.canillas div::after{content:"";position:absolute;left:50%;bottom:-26px;width:6px;height:26px;margin-left:-3px;background:#555}
-.canillas div:nth-child(odd){background:#e3201b;border-color:#e3201b}
-.hora{display:grid;gap:22px;align-items:center;border:2px solid #f2f2f2;padding:clamp(26px,4vw,44px)}
-@media(min-width:900px){.hora{grid-template-columns:auto 1fr}}
-.hora .rng{font:700 clamp(80px,12vw,140px)/.8 "Cnd";color:#e3201b}
-.hora h3{margin:0 0 8px;font:900 28px/1.1 "Txt";letter-spacing:-.03em}
-.hora p{margin:0;color:#bdbdbd}
+:root{--bg:#0b0b0b;--fg:#f4f1ea;--muted:#a8a092;--line:#2a2620;--acc:#f0a33a;--acc-fg:#0b0b0b;--on:#f0a33a;--r:4px;--rc:6px;--card:#151412;
+--bfont:700 17px/1 "Cnd";--bls:.08em;--bcase:uppercase;--h2:700 clamp(56px,9vw,110px)/.85 "Cnd";--h2case:uppercase;--h3:700 30px/1 "Cnd";
+--num:700 clamp(110px,15vw,170px)/.8 "Cnd";--numc:#f0a33a;--addr:700 clamp(36px,5.4vw,56px)/.95 "Cnd";--foot:700 34px/1 "Cnd";--mapf:grayscale(1) invert(.92);
+--bandbg:#e3201b;--bandfg:#fff;--kick:#f0a33a;--hoy:#f0a33a;--barbg:rgba(11,11,11,.96)}
+.hero{background:#0b0b0b;padding:0}
+.hero .hw{display:grid}
+.hero .hw>*{min-width:0}
+@media(min-width:900px){.hero .hw{grid-template-columns:1fr 1fr;min-height:min(100svh,900px)}}
+.foto{position:relative;min-height:64svh;background:url(assets/local.jpg) 50% 20%/cover}
+.foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,0) 45%,#0b0b0b 100%)}
+@media(min-width:900px){.foto{order:2;min-height:0}.foto::after{background:linear-gradient(90deg,#0b0b0b 0,rgba(11,11,11,0) 30%)}}
+.htxt{position:relative;z-index:2;padding:0 22px 44px;margin-top:-120px}
+@media(min-width:900px){.htxt{margin:0;padding:0 48px 0 max(20px,calc((100vw - 1180px)/2));align-self:center}}
+.hero h1{margin:0;font:700 clamp(84px,23vw,220px)/.8 "Cnd";text-transform:uppercase;color:#f4f1ea;letter-spacing:.01em;text-shadow:0 0 28px rgba(255,255,255,.35)}
+.hero .sub{margin:10px 0 0;font:700 clamp(17px,3vw,26px)/1 "Cnd";letter-spacing:clamp(.12em,1vw,.32em);text-transform:uppercase;color:#f0a33a}
+.hero .lead{margin:22px 0 20px;color:#d6d0c4;font-size:18px;max-width:28em}
+.hero .lead b{color:#f4f1ea}
+.hero .estado span{color:#a8a092}
+.hero .acc{display:flex;flex-wrap:wrap;gap:10px}
+.hero .btn.o{border-color:#f4f1ea;color:#f4f1ea}
+.hero .btn.o:hover{background:#f4f1ea;color:#0b0b0b}
+.cats{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 22px;font:700 18px/1 "Cnd";letter-spacing:.08em}
+.cats a{color:#a8a092;text-decoration:none}.cats a:hover{color:#f0a33a}
+.hh{display:grid;gap:22px;align-items:center;border:2px solid #f0a33a;border-radius:6px;padding:clamp(26px,4vw,44px);background:radial-gradient(120% 140% at 0 0,rgba(240,163,58,.16),transparent 60%)}
+@media(min-width:900px){.hh{grid-template-columns:auto 1fr}}
+.hh .rng{font:700 clamp(84px,13vw,150px)/.8 "Cnd";color:#f0a33a}
+.hh h3{margin:0 0 8px;font:900 28px/1.1 "Txt";letter-spacing:-.03em}
+.hh p{margin:0;color:#bdb6aa}
+.pisos{display:grid;gap:14px}
+@media(min-width:900px){.pisos{grid-template-columns:1fr 1fr}}
+.pisos article{position:relative;overflow:hidden;border-radius:6px;min-height:260px;display:flex;align-items:flex-end;padding:24px;background-image:linear-gradient(180deg,rgba(11,11,11,0) 30%,rgba(11,11,11,.92)),url(assets/local.jpg);background-size:cover}
+.pisos article:first-child{background-position:center 85%}
+.pisos article:last-child{background-position:center 38%}
+.pisos h3{margin:0 0 6px;font:700 40px/.9 "Cnd";text-transform:uppercase}
+.pisos p{margin:0;color:#d6d0c4}
+.carta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media(min-width:900px){.carta{grid-template-columns:repeat(5,1fr)}}
+.carta a{border:1.5px solid #2a2620;border-radius:6px;padding:22px 16px;text-decoration:none;color:#f4f1ea;font:700 26px/1 "Cnd";text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.carta a:hover{border-color:#f0a33a;color:#f0a33a}
+.carta svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.band .acc2{display:flex;flex-wrap:wrap;gap:10px}
+.band .btn.w{background:transparent;border-color:#fff;color:#fff}
+.band .btn{background:#fff;border-color:#fff;color:#e3201b}
 @media(min-width:900px){.hero h1{font-size:190px}}
-</style>
+
+.fx{--f-r:16px;background:var(--fbg);color:var(--ffg);padding:clamp(52px,7vw,92px) 0;border-top:1px solid var(--fline);border-bottom:1px solid var(--fline)}
+.fx .fw{width:min(1080px,100% - 40px);margin-inline:auto;display:grid;gap:30px}
+@media(min-width:900px){.fx .fw{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}}
+.fx h2{margin:0;font:700 clamp(40px,6vw,68px)/.95 var(--fh);font-style:var(--fhs);text-transform:var(--fhc);letter-spacing:-.01em;color:var(--ffg)}
+.fx .fp{margin:16px 0 0;color:var(--fmuted);font-size:17px;max-width:26em}
+.fx .fw>*,.fx .panel>*{min-width:0}
+.fx .panel{min-width:0;background:var(--fcard);border:1px solid var(--fline);border-radius:22px;padding:clamp(18px,3vw,28px);display:grid;gap:18px}
+.fx .lbl{font:600 14px/1 "Txt";color:var(--fmuted);margin:0 0 10px}
+.fx .it{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--fline)}
+.fx .it:last-child{border:0}
+.fx .it b{display:block;font:600 17px/1.2 "Txt"}
+.fx .it small{color:var(--fmuted);font-size:14px}
+.fx .st{display:flex;align-items:center;gap:6px}
+.fx .st button{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--fline);background:transparent;color:var(--ffg);font:600 20px/1 "Txt";cursor:pointer}
+.fx .st button.p{background:var(--facc);border-color:var(--facc);color:var(--faccfg)}
+.fx .st output{min-width:26px;text-align:center;font:700 18px/1 "Txt"}
+.fx .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.fx .chips::-webkit-scrollbar{display:none}
+.fx .chip{flex:0 0 auto;border:1.5px solid var(--fline);background:transparent;color:var(--ffg);border-radius:14px;padding:10px 14px;font:600 15px/1.15 "Txt";cursor:pointer;text-align:center;min-width:64px}
+.fx .chip small{display:block;font-weight:400;font-size:12px;color:var(--fmuted)}
+.fx .chip[aria-pressed=true]{background:var(--facc);border-color:var(--facc);color:var(--faccfg)}
+.fx .chip[aria-pressed=true] small{color:var(--faccfg);opacity:.8}
+.fx .chip:disabled{opacity:.35;cursor:not-allowed}
+.fx .row2{display:grid;gap:14px}
+@media(min-width:600px){.fx .row2{grid-template-columns:1fr 1fr}}
+.fx label.f{display:grid;gap:8px;font:600 14px/1 "Txt";color:var(--fmuted)}
+.fx input,.fx select,.fx textarea{font:400 16px/1.3 "Txt";color:var(--ffg);background:var(--fsoft);border:1.5px solid var(--fline);border-radius:12px;padding:12px 14px;width:100%;box-sizing:border-box}
+.fx textarea{min-height:70px;resize:vertical}
+.fx .go{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:999px;padding:17px 22px;background:var(--facc);color:var(--faccfg);font:700 17px/1 "Txt";cursor:pointer}
+.fx .go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.fx .go[disabled]{opacity:.45;cursor:not-allowed}
+.fx .hint{margin:0;font-size:13px;color:var(--fmuted);text-align:center}
+.fx .sum{font:600 15px/1.3 "Txt"}
+.fx :focus-visible{outline:3px solid var(--facc);outline-offset:2px}
+.fx{margin-top:clamp(66px,9vw,116px)}</style>
 </head>
 <body>
 <div class="demo">Versión de muestra</div>
-<header class="hero"><div class="wrap"><div><p class="kick">Av. Alem 560 · todos los días desde las 18</p><h1>Barone</h1><p class="tag">Tu día es hoy. Disfrutalo.</p><nav class="nav"><a href="#tap">[Tap]</a><a href="#tap">[Food]</a><a href="#tap">[Burgers]</a><a href="#tap">[Veggie]</a><a href="#tap">[Drinks]</a></nav><p class="lead">Canillas de cerveza, burgers y cocina abierta hasta las 0:30. Para la previa, la cena o quedarse hasta tarde los fines de semana.</p><p class="estado" id="estado"></p><div class="acc"><a class="btn a" href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Ver la carta</a><a class="btn o" href="https://wa.me/message/JJVXAS5T45VNE1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Take away y delivery</a></div></div><div class="art" aria-hidden="true"><div class="canillas" style="height:220px"><div style="height:150px"></div><div style="height:190px"></div><div style="height:170px"></div><div style="height:210px"></div><div style="height:160px"></div><div style="height:185px"></div></div></div></div></header>
+<header class="hero"><div class="hw"><div class="foto" role="img" aria-label="El frente de Barone de noche, con el cartel iluminado, la barra y la terraza"></div><div class="htxt"><h1>Barone</h1><p class="sub">Tap Room · Av. Alem 560</p><p class="lead"><b>Tu día es hoy. Disfrutalo.</b> Canillas, burgers y cocina abierta hasta las 0:30. Abajo en la barra o arriba en la terraza.</p><nav class="cats" aria-label="Carta"><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">[Tap]</a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">[Food]</a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">[Burgers]</a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">[Veggie]</a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">[Drinks]</a></nav><p class="estado" id="estado"></p><div class="acc"><a class="btn a" href="#accion"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Reservar mesa</a><a class="btn o" href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>Ver la carta</a><a class="btn o" href="https://wa.me/message/JJVXAS5T45VNE1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Take away</a></div></div></div></header>
 <main>
-<section class="wrap" id="tap"><div class="hora"><div class="rng">18–21</div><div><h3>Todas las birras a precio especial</h3><p>Todos los días de 18 a 21. Nos cansamos del happy hour de una hora: acá dura tres.</p></div></div></section>
-<section class="wrap"><div class="cab"><h2>[Food]</h2><p>Cocina abierta hasta las 0:30, con opciones veggie.</p></div><ul class="cards"><li><h3>Burgers</h3><p>Las de la casa, con papas.</p></li><li><h3>Para picar</h3><p>Para compartir mientras llegan las pintas.</p></li><li><h3>Veggie</h3><p>Hay opciones sin carne en la carta.</p></li></ul></section>
-<div class="band"><div class="wrap"><div><h2>Noches especiales</h2><p>Sushi libre, pastas artesanales y fechas con invitados. Las anunciamos en Instagram.</p></div><a class="btn a" href="https://www.instagram.com/barone.tap/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>Ver agenda</a></div></div>
+<section class="wrap"><div class="hh"><div class="rng">18–21</div><div><h3>Todas las birras a precio especial</h3><p>Todos los días de 18 a 21. Llegá temprano y arrancá la noche en Barone.</p></div></div></section>
+<section class="wrap"><div class="cab"><h2>Dos pisos</h2><p>Elegí dónde: cerca de las canillas o al aire libre.</p></div><div class="pisos"><article><div><h3>La barra</h3><p>Planta baja, al lado de las canillas.</p></div></article><article><div><h3>La terraza</h3><p>Arriba, con luces y vista a Alem.</p></div></article></div></section>
+<section class="fx" id="accion" style="--fbg:#0b0b0b;--ffg:#f4f1ea;--facc:#f0a33a;--faccfg:#0b0b0b;--fline:#2a2620;--fmuted:#a8a092;--fcard:#151412;--fsoft:#1f1d1a;--fh:&quot;Cnd&quot;;--fhc:uppercase;--fhs:normal" data-cfg='{&quot;mode&quot;: &quot;reserva&quot;, &quot;wa&quot;: &quot;2915115121&quot;, &quot;short&quot;: &quot;Barone&quot;, &quot;sched&quot;: {&quot;0&quot;: [[1080, 1500]], &quot;1&quot;: [[1080, 1500]], &quot;2&quot;: [[1080, 1500]], &quot;3&quot;: [[1080, 1500]], &quot;4&quot;: [[1080, 1500]], &quot;5&quot;: [[1080, 1740]], &quot;6&quot;: [[1080, 1740]]}, &quot;unit&quot;: &quot;&quot;, &quot;exl&quot;: &quot;&quot;}'><div class="fw"><div><h2>Reservá tu mesa</h2><p class="fp">Abajo en la barra o arriba en la terraza. Elegí día, horario y cuántos son, y te confirmamos por WhatsApp.</p></div><form class="panel" onsubmit="return false"><div><p class="lbl">Día</p><div class="chips dsel"></div></div><div><p class="lbl">Horario</p><div class="chips hrsel"><p class="hint" style="text-align:left">Primero elegí el día.</p></div></div><div><p class="lbl">Cuántos son</p><div class="st pers"><button type="button" class="m" aria-label="Uno menos">−</button><output>2</output><button type="button" class="p" aria-label="Uno más">+</button></div></div><div class="row2"><label class="f">A nombre de<input class="nom" autocomplete="name" placeholder="Tu nombre"></label><label class="f">Algo más<textarea class="nota" placeholder="Opcional"></textarea></label></div><p class="sum"></p><button type="button" class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Pedir la reserva por WhatsApp</button><p class="hint">Se abre WhatsApp con el mensaje armado. No se cobra nada desde la web.</p></form></div></section><section class="wrap"><div class="cab"><h2>La carta</h2><p>Todo actualizado en la carta online.</p></div><div class="carta"><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">Tap<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">Food<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">Burgers<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">Veggie<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener">Drinks<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></div></section>
+<div class="band"><div class="wrap"><div><h2>Noches especiales</h2><p>Sushi libre, pastas y fechas con invitados. Las anunciamos en Instagram.</p></div><div class="acc2"><a class="btn a" href="https://www.instagram.com/barone.tap/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>Ver la agenda</a><a class="btn w" href="https://wa.me/message/JJVXAS5T45VNE1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Take away</a></div></div></div>
 <section class="wrap" id="opiniones">
   <div class="voz"><p class="n">+3.400</p><div><p>opiniones en Google Maps, con 4,2 de 5.</p></div><div class="redes"><a class="red" href="https://www.instagram.com/barone.tap/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>@barone.tap</a></div></div>
 </section>
@@ -135,7 +198,7 @@ footer b{font:var(--foot);color:var(--h2c,var(--fg));text-transform:var(--h2case
 </section>
 </main>
 <footer><div class="wrap"><b>Barone Tap Room</b><span>Av. Alem 560, Bahía Blanca · 291 511-5121</span></div></footer>
-<nav class="barra" aria-label="Accesos rápidos"><a class="a" href="https://wa.me/message/JJVXAS5T45VNE1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Pedir</a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Carta</a><a href="https://www.google.com/maps/search/?api=1&query=Barone%20Tap%20Room%2C%20Av.%20Alem%20560%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Llegar</a></nav>
+<nav class="barra" aria-label="Accesos rápidos"><a class="a" href="#accion"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Reservar</a><a href="https://menu.fu.do/baronebar/qr-menu" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>Carta</a><a href="https://wa.me/message/JJVXAS5T45VNE1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Take away</a></nav>
 <script>
 (function(){
   var S={"0": [[1080, 1500]], "1": [[1080, 1500]], "2": [[1080, 1500]], "3": [[1080, 1500]], "4": [[1080, 1500]], "5": [[1080, 1740]], "6": [[1080, 1740]]}, el=document.getElementById('estado'), root=document.documentElement;
@@ -156,5 +219,38 @@ footer b{font:var(--foot);color:var(--h2c,var(--fg));text-transform:var(--h2case
 })();
 </script>
 <script data-goatcounter="https://luchovaschetti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
+<script>
+(function(){document.querySelectorAll('.fx').forEach(function(fx){
+var D=JSON.parse(fx.getAttribute('data-cfg'));var q=function(s){return fx.querySelector(s)};
+var dias=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+function hm(m){m=m%1440;var h=Math.floor(m/60),mi=m%60;return h+':'+(mi<10?'0':'')+mi}
+if(D.mode==='pedido'){
+ var qty={};fx.querySelectorAll('.it').forEach(function(r){var k=r.getAttribute('data-k');qty[k]=0;var o=r.querySelector('output');
+  r.querySelector('.m').onclick=function(){qty[k]=Math.max(0,qty[k]-1);o.textContent=qty[k];upd()};
+  r.querySelector('.p').onclick=function(){qty[k]++;o.textContent=qty[k];upd()}});
+ var modo='Retiro en el local';fx.querySelectorAll('[data-modo]').forEach(function(b){b.onclick=function(){modo=b.getAttribute('data-modo');fx.querySelectorAll('[data-modo]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});q('.dir').hidden=modo.indexOf('Env')<0}});
+ function upd(){var n=0;for(var k in qty)n+=qty[k];q('.go').disabled=!n;q('.sum').textContent=n?('Tu pedido: '+n+' '+D.unit):'Todavía no elegiste nada'}
+ q('.go').onclick=function(){var l=[];for(var k in qty)if(qty[k])l.push('• '+qty[k]+' '+k);
+  var t='Hola '+D.short+'! Quiero hacer este pedido:\n'+l.join('\n');var ex=q('.ex');if(ex)t+='\n'+D.exl+': '+ex.value;
+  t+='\n\n'+modo;if(modo.indexOf('Env')>=0&&q('.dir input').value)t+=': '+q('.dir input').value;
+  var cu=q('.cuando').value;if(cu)t+='\nPara: '+cu;var no=q('.nom').value;if(no)t+='\nA nombre de: '+no;var nt=q('.nota').value;if(nt)t+='\nNota: '+nt;
+  window.open('https://wa.me/549'+D.wa+'?text='+encodeURIComponent(t),'_blank')};upd();
+}else{
+ var now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Argentina/Buenos_Aires'}));var sel=null,hora=null,pers=2;
+ var cd=q('.dsel');for(var i=0;i<10;i++){(function(i){var d=new Date(now);d.setDate(now.getDate()+i);var r=D.sched[d.getDay()]||[];
+  var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed','false');
+  b.innerHTML=(i===0?'Hoy':i===1?'Mañana':dias[d.getDay()].slice(0,3).replace(/^./,function(c){return c.toUpperCase()}))+'<small>'+d.getDate()+'/'+(d.getMonth()+1)+'</small>';
+  if(!r.length){b.disabled=true;b.title='Cerrado'}
+  b.onclick=function(){sel={d:d,r:r,i:i};cd.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b)});horas()};cd.appendChild(b)})(i)}
+ function horas(){var ch=q('.hrsel');ch.innerHTML='';hora=null;var nm=now.getHours()*60+now.getMinutes();
+  sel.r.forEach(function(rg){for(var m=Math.ceil(rg[0]/30)*30;m<=rg[1]-60;m+=30){if(sel.i===0&&m<nm+30)continue;(function(m){var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed','false');b.textContent=hm(m);
+   b.onclick=function(){hora=hm(m);ch.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b)});upd()};ch.appendChild(b)})(m)}});
+  if(!ch.children.length)ch.innerHTML='<p class="hint" style="text-align:left">No quedan horarios para ese día.</p>';upd()}
+ var po=q('.pers output');q('.pers .m').onclick=function(){pers=Math.max(1,pers-1);po.textContent=pers;upd()};q('.pers .p').onclick=function(){pers=Math.min(30,pers+1);po.textContent=pers;upd()};
+ function upd(){q('.go').disabled=!(sel&&hora);q('.sum').textContent=sel&&hora?(dias[sel.d.getDay()]+' '+sel.d.getDate()+'/'+(sel.d.getMonth()+1)+' a las '+hora+' · '+pers+(pers>1?' personas':' persona')):'Elegí día y horario'}
+ q('.go').onclick=function(){var t='Hola '+D.short+'! Quiero reservar una mesa.\nDía: '+dias[sel.d.getDay()]+' '+sel.d.getDate()+'/'+(sel.d.getMonth()+1)+'\nHora: '+hora+'\nSomos: '+pers;
+  var no=q('.nom').value;if(no)t+='\nA nombre de: '+no;var nt=q('.nota').value;if(nt)t+='\nNota: '+nt;
+  window.open('https://wa.me/549'+D.wa+'?text='+encodeURIComponent(t),'_blank')};upd();
+}})})();
+</script></body>
 </html>
