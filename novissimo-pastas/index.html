@@ -1,207 +1,103 @@
-<!DOCTYPE html>
-<html lang="es-AR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#1f3fa3">
-<title>Novissimo · Pastas &amp; Mercado en Hipólito Yrigoyen 728, Bahía Blanca</title>
-<meta name="description" content="Pastas frescas de sémola de trigo candeal, sorrentinos, ravioles y mercado italiano en Yrigoyen 728. Encargos por WhatsApp.">
-<meta property="og:title" content="Novissimo · Pastas &amp; Mercado en Hipólito Yrigoyen 728, Bahía Blanca">
-<meta property="og:description" content="Pastas frescas de sémola de trigo candeal, sorrentinos, ravioles y mercado italiano en Yrigoyen 728. Encargos por WhatsApp.">
-<meta name="robots" content="noindex,nofollow">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Store", "name": "Novissimo Pastas", "telephone": "+542915040322", "address": {"@type": "PostalAddress", "streetAddress": "Hipólito Yrigoyen 728", "addressLocality": "Bahía Blanca", "addressRegion": "Buenos Aires", "addressCountry": "AR"}, "geo": {"@type": "GeoCoordinates", "latitude": -38.710931099999996, "longitude": -62.25790429999999}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 817}, "sameAs": ["https://www.instagram.com/novissimopastas/"]}</script>
-<style>
-@font-face{font-family:"Txt";src:url(assets/inter-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+<!DOCTYPE html><html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex"><title>Novissimo Pastas · versión app</title><meta name="theme-color" content="#f7f1e6">
+<style>:root{--bg:#f7f1e6;--fg:#14234f;--acc:#1f3fa3;--accfg:#fff;--line:#e3d8c4;--muted:#5a6178;--card:#fff;--soft:#e9eefb;--outer:#1f3fa3;--outerfg:#fff;--fh:"Cnd";--fhc:uppercase;--fhs:normal}@font-face{font-family:"Txt";src:url(assets/inter-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Txt";src:url(assets/inter-600.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Cnd";src:url(assets/hcn-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Cnd";src:url(assets/hcn-700.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0}
-img,svg{display:block}
-a{color:inherit}
-:focus-visible{outline:3px solid currentColor;outline-offset:3px}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-.demo{position:fixed;right:0;bottom:84px;z-index:50;background:#fff;color:#111;font:600 11px/1 "Txt",sans-serif;letter-spacing:.04em;padding:7px 12px 7px 10px;border-radius:999px 0 0 999px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
-.ico svg,.btn svg,.barra svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--outer);color:var(--fg);font:400 16px/1.5 "Txt",system-ui,sans-serif}
+.stage{min-height:100vh;display:grid;place-items:start center}
+@media(min-width:900px){.stage{grid-template-columns:1fr 440px;gap:64px;align-items:center;max-width:1100px;margin:0 auto;padding:40px}}
+.pitch{display:none}
+@media(min-width:900px){.pitch{display:block;color:var(--outerfg)}.pitch h1{font:700 64px/.95 var(--fh);font-style:var(--fhs);text-transform:var(--fhc);margin:0 0 16px}.pitch p{font-size:18px;opacity:.85;max-width:24em}}
+.app{width:100%;max-width:440px;min-height:100vh;background:var(--bg);position:relative;padding-bottom:110px}
+@media(min-width:900px){.app{min-height:auto;height:860px;overflow:auto;border-radius:40px;box-shadow:0 40px 100px rgba(0,0,0,.35);border:10px solid #0b0b0b}}
+.top{position:sticky;top:0;z-index:5;background:var(--bg);padding:18px 20px 12px;border-bottom:1px solid var(--line)}
+.brand{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand b{white-space:nowrap;font:700 24px/1 var(--fh);font-style:var(--fhs);text-transform:var(--fhc)}
+.pill{display:inline-flex;align-items:center;gap:6px;font:600 13px/1 "Txt";padding:7px 11px;border-radius:999px;background:var(--soft);color:var(--muted);white-space:nowrap}
+.pill span{display:none}
+.pill i{width:8px;height:8px;border-radius:50%;background:#9a9a9a}
+.abierto .pill i{background:#22a35a}.abierto .pill{color:var(--fg)}
+.tabs{display:flex;gap:6px;margin-top:14px;background:var(--soft);padding:5px;border-radius:14px}
+.tabs button{flex:1;border:0;background:transparent;color:var(--muted);font:600 15px/1 "Txt";padding:11px 6px;border-radius:10px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--acc);color:var(--accfg)}
+.pane{padding:22px 20px}
+.pane[hidden]{display:none}
+.hi{background:var(--acc);color:var(--accfg);border-radius:24px;padding:26px 22px;margin-bottom:18px}
+.hi h2{margin:0;font:700 40px/.95 var(--fh);font-style:var(--fhs);text-transform:var(--fhc)}
+.hi p{margin:10px 0 0;opacity:.9}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;text-decoration:none;color:var(--fg);display:grid;gap:6px;cursor:pointer;font:inherit;text-align:left}
+.hl{display:grid;gap:10px;margin-top:18px}
+.hl h3{margin:0 0 2px;font:600 14px/1 "Txt";color:var(--muted)}
+.hl div{background:var(--soft);border-radius:18px;padding:16px 18px}
+.hl b{display:block;font:700 22px/1.1 var(--fh);font-style:var(--fhs);text-transform:var(--fhc);color:var(--acc)}
+.hl span{font-size:15px;color:var(--fg)}
+.tile svg{width:24px;height:24px;fill:none;stroke:var(--acc);stroke-width:2}
+.tile b{font:600 16px/1.2 "Txt"}
+.tile small{color:var(--muted);font-size:13px}
+.hrs{list-style:none;margin:0;padding:0}
+.hrs li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.hrs li.hoy{font-weight:700;color:var(--acc)}
+.hrs .x{color:var(--muted)}
+.mapa{margin-top:16px;border-radius:18px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3}
+.mapa iframe{width:100%;height:100%;border:0}
+.cta{position:fixed;left:0;right:0;bottom:0;z-index:6;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,var(--bg) 30%)}
+@media(min-width:900px){.cta{position:sticky}}
+.cta a{display:flex;align-items:center;justify-content:center;gap:10px;max-width:408px;margin:0 auto;border-radius:999px;padding:17px;background:#1f9d55;color:#fff;font:700 17px/1 "Txt";text-decoration:none}
+.cta svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.app .fx{background:transparent;border:0;padding:0}
+.app .fx .fw{width:100%;display:block}
+.app .fx .fw>div:first-child{display:none}
+.app .fx .panel{border-radius:20px}
+.demo{position:fixed;right:0;bottom:84px;z-index:7;background:#fff;color:#111;font:600 11px/1 "Txt";padding:6px 10px;border-radius:8px 0 0 8px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
 @media(min-width:900px){.demo{bottom:20px}}
 
-:root{--azul:#1f3fa3;--azul-dk:#142b74;--papel:#f1ece6;--crema:#fbf8f3;--tinta:#15204a;--gris:#5b6178;--linea:#d9d2c8;--yema:#f0c24f}
-body{background:var(--papel);color:var(--tinta);font:400 17px/1.6 "Txt",system-ui,sans-serif}
-.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
-.btn{display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 24px;border-radius:4px;text-decoration:none;font:700 17px/1 "Cnd",sans-serif;letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--azul);transition:background .15s,color .15s}
-.btn.a{background:var(--azul);color:#fff}.btn.a:hover{background:var(--azul-dk);border-color:var(--azul-dk)}
-.btn.o{color:var(--azul)}.btn.o:hover{background:var(--azul);color:#fff}
-.acc{display:flex;flex-wrap:wrap;gap:12px}
-/* hero */
-.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1.5px solid var(--azul);font:700 15px/1 "Cnd";letter-spacing:.14em;text-transform:uppercase;color:var(--azul)}
-.top a{text-decoration:none}
-.hero{padding:clamp(34px,6vw,70px) 0 clamp(38px,5vw,60px)}
-.hero h1{margin:0;font:700 clamp(64px,19vw,250px)/.8 "Cnd",sans-serif;color:var(--azul);letter-spacing:-.01em;text-transform:uppercase}
-.marca{display:flex;align-items:center;gap:16px;margin:18px 0 0;font:400 clamp(20px,3.4vw,30px)/1 "Cnd";letter-spacing:.32em;text-transform:uppercase;color:var(--azul)}
-.marca::before,.marca::after{content:"";height:1.5px;background:var(--azul);flex:1;max-width:120px}
-.marca::before{display:none}
-.bajada{display:grid;gap:28px;margin-top:clamp(28px,4vw,46px)}
-@media(min-width:900px){.bajada{grid-template-columns:1.2fr 1fr;align-items:end}}
-.bajada p.lead{margin:0;font-size:clamp(19px,2.2vw,22px);line-height:1.5;max-width:30em}
-.estado{margin:0 0 18px;font:600 16px/1.3 "Txt"}.estado span{font-weight:400;color:var(--gris)}
-.estado i{display:inline-block;width:10px;height:10px;border-radius:50%;background:#9a96a0;margin-right:10px;vertical-align:1px}
-.abierto .estado i{background:#2e9d5b;box-shadow:0 0 0 4px rgba(46,157,91,.18)}
-.tiles{width:100%;height:clamp(110px,16vw,176px);border-top:3px solid var(--azul);border-bottom:3px solid var(--azul)}
-/* secciones */
-section{padding:clamp(64px,9vw,112px) 0 0}
-.cab{display:grid;gap:14px;margin-bottom:38px}
-@media(min-width:900px){.cab{grid-template-columns:1fr 1fr;align-items:end}}
-h2{margin:0;font:700 clamp(46px,8vw,86px)/.88 "Cnd";text-transform:uppercase;color:var(--azul);letter-spacing:-.005em}
-.cab p{margin:0;color:var(--gris);max-width:31em}
-.vitrina{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);border-top:1.5px solid var(--azul);border-left:1.5px solid var(--azul)}
-@media(min-width:900px){.vitrina{grid-template-columns:repeat(4,1fr)}}
-.vitrina li{padding:22px 18px 26px;border-right:1.5px solid var(--azul);border-bottom:1.5px solid var(--azul);background:var(--crema)}
-.ico-p{width:58px;height:58px;margin-bottom:14px}
-.sh{width:100%;height:100%;fill:none;stroke:var(--azul);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-.vitrina h3{margin:0 0 6px;font:700 25px/1 "Cnd";text-transform:uppercase;letter-spacing:.02em}
-.vitrina p{margin:0;font-size:15px;line-height:1.45;color:var(--gris)}
-.nota{margin:18px 0 0;font-size:15px;color:var(--gris)}
-/* esta semana */
-.semana{background:var(--azul);color:#fff;padding:clamp(56px,8vw,96px) 0;margin-top:clamp(64px,9vw,112px)}
-.semana h2{color:#fff}
-.semana .cab p{color:#cfd7f5}
-.esp{list-style:none;margin:0;padding:0;display:grid;gap:18px}
-@media(min-width:900px){.esp{grid-template-columns:1.25fr 1fr 1fr}}
-.esp li{border:1.5px solid rgba(255,255,255,.5);padding:26px 24px 28px;border-radius:4px;display:flex;flex-direction:column;gap:10px}
-.esp li:first-child{background:#fff;color:var(--tinta);border-color:#fff}
-.esp small{font:700 13px/1 "Cnd";letter-spacing:.16em;text-transform:uppercase;color:var(--yema)}
-.esp li:first-child small{color:var(--azul)}
-.esp h3{margin:0;font:700 clamp(30px,3.4vw,40px)/.95 "Cnd";text-transform:uppercase}
-.esp p{margin:0;font-size:16px;opacity:.88}
-.esp .btn{margin-top:auto;align-self:flex-start}
-/* mercado */
-.mercado{display:grid;gap:34px}
-@media(min-width:900px){.mercado{grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}}
-.lista{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--azul)}
-.lista li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:16px 0;border-bottom:1px solid var(--linea)}
-.lista b{font:700 23px/1.05 "Cnd";text-transform:uppercase}
-.lista span{color:var(--gris);font-size:15px;text-align:right}
-.jueves{background:var(--crema);border:1.5px solid var(--azul);padding:28px 26px;border-radius:4px;position:relative}
-.jueves h3{margin:0 0 10px;font:700 34px/.95 "Cnd";text-transform:uppercase;color:var(--azul)}
-.jueves p{margin:0}
-.jueves .chip{position:absolute;top:-14px;left:22px;background:var(--yema);color:var(--tinta);font:700 13px/1 "Cnd";letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border-radius:3px}
-/* 29 */
-.n29{display:grid;gap:24px;align-items:center;border:1.5px solid var(--azul);background:var(--crema);padding:clamp(28px,4vw,46px);border-radius:4px}
-@media(min-width:900px){.n29{grid-template-columns:auto 1fr auto;gap:46px}}
-.n29 .d{font:700 clamp(110px,16vw,170px)/.8 "Cnd";color:var(--azul)}
-.n29 h3{margin:0 0 6px;font:700 clamp(30px,3.6vw,42px)/.95 "Cnd";text-transform:uppercase}
-.n29 p{margin:0;color:var(--gris);max-width:30em}
-/* opiniones */
-.voz{display:grid;gap:26px;border-top:1.5px solid var(--azul);padding-top:30px}
-@media(min-width:900px){.voz{grid-template-columns:auto 1fr auto;align-items:center;gap:52px}}
-.voz .n{font:700 clamp(96px,14vw,150px)/.8 "Cnd";color:var(--azul);margin:0}
-.voz p{margin:0;max-width:34em}.voz .q{color:var(--gris);margin-top:8px}
-.ig{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:700 17px/1 "Cnd";letter-spacing:.06em;text-transform:uppercase;color:var(--azul)}
-.ig svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8}
-/* visita */
-.datos{display:grid;gap:44px}
-@media(min-width:900px){.datos{grid-template-columns:1fr 1.1fr;gap:64px}}
-.horas{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--azul);font-variant-numeric:tabular-nums}
-.horas li{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--linea)}
-.horas .x{color:var(--gris)}
-.horas li.hoy{font-weight:700;color:var(--azul)}
-.horas li.hoy span:first-child::after{content:" · hoy";font-weight:400}
-address{font:700 clamp(34px,5vw,50px)/.95 "Cnd";text-transform:uppercase;font-style:normal;color:var(--azul);margin:0 0 6px}
-.zona{color:var(--gris);margin:0 0 22px}
-.mapa{margin-top:24px;border:1.5px solid var(--azul);line-height:0}
-.mapa iframe{width:100%;height:320px;border:0;filter:saturate(.7)}
-footer{margin-top:clamp(70px,9vw,110px)}
-footer .pie{padding:34px 0 120px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;color:var(--gris);font-size:14px}
-footer b{font:700 28px/1 "Cnd";letter-spacing:.04em;color:var(--azul);text-transform:uppercase}
-@media(min-width:900px){footer .pie{padding-bottom:40px}}
-.barra{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--papel);border-top:1.5px solid var(--azul)}
-.barra a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:4px;text-decoration:none;font:700 16px/1 "Cnd";letter-spacing:.06em;text-transform:uppercase;color:var(--azul);border:1.5px solid var(--azul)}
-.barra a.a{flex:1.6;background:var(--azul);color:#fff}
-@media(min-width:900px){.barra{display:none}}
-
-</style>
-</head>
-<body>
-<div class="demo">Versión de muestra</div>
-<header>
-<div class="wrap top"><span>Pastas &amp; Mercado</span><a href="https://www.google.com/maps/search/?api=1&query=Novissimo%20Pastas%2C%20Hip%C3%B3lito%20Yrigoyen%20728%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener">Yrigoyen 728</a></div>
-<div class="wrap hero">
-  <h1>Novissimo</h1>
-  <p class="marca">Pastas &amp; Mercado</p>
-  <div class="bajada">
-    <p class="lead">Pasta fresca hecha acá, con sémola de trigo candeal, y un mercado para armar la mesa completa: quesos, salsas, pan de masa madre. Vení a buscar todo lo que te gusta comer.</p>
-    <div><p class="estado" id="estado"></p>
-    <div class="acc"><a class="btn a" href="https://wa.me/5492915040322?text=Hola%20Novissimo%21%20Quer%C3%ADa%20encargar%20pasta%20para%20retirar.%0AQu%C3%A9%20quiero%3A%0ACu%C3%A1ndo%20lo%20retiro%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Encargar por WhatsApp</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Novissimo%20Pastas%2C%20Hip%C3%B3lito%20Yrigoyen%20728%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a></div></div>
-  </div>
-</div>
-<svg class="tiles" aria-hidden="true" preserveAspectRatio="none"><defs><pattern id="maj" width="88" height="88" patternUnits="userSpaceOnUse">
-<rect width="88" height="88" fill="#fbf8f3"/>
-<g fill="none" stroke="#1f3fa3" stroke-width="2.2">
-<path d="M0 22a22 22 0 0 0 22-22M66 0a22 22 0 0 0 22 22M88 66a22 22 0 0 0-22 22M22 88A22 22 0 0 0 0 66"/>
-<path d="M44 20c6 8 6 16 0 24-6-8-6-16 0-24zM44 68c-6-8-6-16 0-24 6 8 6 16 0 24zM20 44c8-6 16-6 24 0-8 6-16 6-24 0zM68 44c-8 6-16 6-24 0 8-6 16-6 24 0z"/>
-</g>
-<g fill="#1f3fa3"><circle cx="44" cy="44" r="4"/><circle cx="0" cy="0" r="7"/><circle cx="88" cy="0" r="7"/><circle cx="0" cy="88" r="7"/><circle cx="88" cy="88" r="7"/></g>
-<g fill="#f0c24f"><circle cx="44" cy="44" r="1.6"/><circle cx="44" cy="8" r="2.4"/><circle cx="44" cy="80" r="2.4"/><circle cx="8" cy="44" r="2.4"/><circle cx="80" cy="44" r="2.4"/></g>
-</pattern></defs><rect width="100%" height="100%" fill="url(#maj)"/></svg>
-</header>
-<main>
-<section class="wrap" id="pastas">
-  <div class="cab"><h2>La vitrina</h2><p>Todos los días salen pastas frescas y rellenas. Las masas son de sémola de trigo candeal y lo que cambia es el relleno, según la estación.</p></div>
-  <ul class="vitrina"><li><div class="ico-p"><svg viewBox="0 0 64 64" class="sh"><circle cx="32" cy="32" r="24"/><circle cx="32" cy="32" r="14"/><path d="M14 22c3-2 5-1 7-3M42 49c2-2 5-2 7-4"/></svg></div><h3>Sorrentinos</h3><p>Los que más se llevan. Calabaza, jamón y queso, y los de temporada.</p></li><li><div class="ico-p"><svg viewBox="0 0 64 64" class="sh"><rect x="12" y="12" width="40" height="40" rx="2" stroke-dasharray="3 3"/><rect x="20" y="20" width="24" height="24" rx="10"/></svg></div><h3>Ravioles</h3><p>Masa fina y bien rellenos, para la mesa del domingo.</p></li><li><div class="ico-p"><svg viewBox="0 0 64 64" class="sh"><path d="M10 46 32 12l22 34z"/><path d="M22 46c0-8 4-14 10-14s10 6 10 14"/></svg></div><h3>Cappellacci</h3><p>Ahora salen de espárragos y espinaca, mientras dure la temporada.</p></li><li><div class="ico-p"><svg viewBox="0 0 64 64" class="sh"><path d="M14 40c0-14 8-24 18-24s18 10 18 24"/><path d="M14 40c6 6 30 6 36 0"/><circle cx="32" cy="38" r="5"/></svg></div><h3>Tortelloni</h3><p>De roast beef braseado al horno, con masa de sémola.</p></li><li><div class="ico-p"><svg viewBox="0 0 64 64" class="sh"><path d="M8 18c8-6 16 6 24 0s16 6 24 0M8 30c8-6 16 6 24 0s16 6 24 0M8 42c8-6 16 6 24 0s16 6 24 0"/></svg></div><h3>Tallarines</h3><p>Finos o anchos. Con pesto, un clásico de todos los días.</p></li><li><div class="ico-p"><svg viewBox="0 0 64 64" class="sh"><path d="M12 44c0-14 9-24 20-24s20 10 20 24z"/><path d="M18 20l2 6M26 15l1 6M34 14v6M42 16l-1 6M49 21l-3 5"/></svg></div><h3>Crestas</h3><p>De sémola de trigo candeal. Con bolognesa y stracciatella.</p></li><li><div class="ico-p"><svg viewBox="0 0 64 64" class="sh"><ellipse cx="32" cy="32" rx="20" ry="13"/><path d="M20 24v16M26 21v22M32 20v24M38 21v22M44 24v16"/></svg></div><h3>Ñoquis</h3><p>Hechos a mano. El 29 no puede faltar.</p></li><li><div class="ico-p"><svg viewBox="0 0 64 64" class="sh"><path d="M18 10l28 8-28 8 28 8-28 8 28 8"/></svg></div><h3>Fusilli</h3><p>100% sémola de trigo candeal, para salsas con cuerpo.</p></li></ul>
-  <p class="nota">Lo que hay cambia día a día. Escribinos y te decimos qué salió hoy.</p>
-</section>
-<div class="semana"><div class="wrap">
-  <div class="cab"><h2>Esta semana</h2><p>Lo nuevo de la cocina. Salen en tandas cortas: si querés asegurarte, encargalo.</p></div>
-  <ul class="esp">
-    <li><small>Especial del finde</small><h3>Casarecce con pesto de tomate y albahaca</h3><p>Doble pesto, para los que no se deciden.</p><a class="btn a" href="https://wa.me/5492915040322?text=Hola%20Novissimo%21%20Quer%C3%ADa%20encargar%20pasta%20para%20retirar.%0AQu%C3%A9%20quiero%3A%0ACu%C3%A1ndo%20lo%20retiro%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Encargar</a></li>
-    <li><small>De temporada</small><h3>Cappellacci de espárragos y espinaca</h3><p>Arrancó la temporada de espárragos y los vamos a tener mientras dure.</p></li>
-    <li><small>De la casa</small><h3>Tortelloni de roast beef</h3><p>Roast beef braseado al horno, envuelto en masa de sémola.</p></li>
-  </ul>
-</div></div>
-<section class="wrap" id="mercado">
-  <div class="mercado">
-    <div><div class="cab" style="grid-template-columns:1fr;margin-bottom:26px"><h2>El mercado</h2><p>Todo lo que va con la pasta, en el mismo lugar.</p></div>
-      <div class="jueves"><span class="chip">Los jueves</span><h3>Baguette de masa madre</h3><p>Con stracciatella, mortadela con pistachos, rúcula, pesto y aceite de oliva.</p></div></div>
-    <ul class="lista">
-      <li><b>Burrata</b><span>De Arrivata Quesos</span></li>
-      <li><b>Stracciatella</b><span>Para terminar la pasta</span></li>
-      <li><b>Salsas y pestos</b><span>Pomodoro, bolognesa, ragú de hongos</span></li>
-      <li><b>Panes</b><span>De masa madre</span></li>
-      <li><b>Fiambres</b><span>Mortadela con pistachos y más</span></li>
-      <li><b>Quesos para rallar</b><span>Todo el que te guste</span></li>
-    </ul>
-  </div>
-</section>
-<section class="wrap" id="noquis">
-  <div class="n29"><div class="d">29</div><div><h3>Día de ñoquis</h3><p>El 29 hay ñoquis hechos a mano, con ragú de hongos o la salsa que elijas. Encargalos antes así no te quedás sin.</p></div>
-  <a class="btn a" href="https://wa.me/5492915040322?text=Hola%21%20Quer%C3%ADa%20encargar%20%C3%B1oquis%20para%20el%2029.%0ACantidad%3A%0ACon%20qu%C3%A9%20salsa%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Encargar ñoquis</a></div>
-</section>
-<section class="wrap" id="opiniones">
-  <div class="voz"><p class="n">4,7</p>
-    <div><p>de 5 en Google Maps, con más de 800 opiniones.</p><p class="q">Lo que más se repite: la calidad de las pastas, los sorrentinos y que te explican cómo cocinar cada una.</p></div>
-    <a class="ig" href="https://www.instagram.com/novissimopastas/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>@novissimopastas</a></div>
-</section>
-<section class="wrap" id="visita">
-  <div class="datos">
-    <div><h2 style="margin-bottom:24px">Horarios</h2><ul class="horas"><li data-d="1"><span>Lunes</span><span>9:30 a 20 h</span></li><li data-d="2"><span>Martes</span><span>9:30 a 20 h</span></li><li data-d="3"><span>Miércoles</span><span>9:30 a 20 h</span></li><li data-d="4"><span>Jueves</span><span>9:30 a 20 h</span></li><li data-d="5"><span>Viernes</span><span>9:30 a 20 h</span></li><li data-d="6"><span>Sábado</span><span>9:30 a 20 h</span></li><li data-d="0"><span>Domingo</span><span>9 a 13:30 h</span></li></ul><p class="zona" style="margin-top:14px">Domingos solo por la mañana.</p></div>
-    <div><h2 style="margin-bottom:24px">Dónde</h2><address>Hipólito Yrigoyen 728</address><p class="zona">Centro, Bahía Blanca</p>
-      <div class="acc"><a class="btn a" href="https://www.google.com/maps/search/?api=1&query=Novissimo%20Pastas%2C%20Hip%C3%B3lito%20Yrigoyen%20728%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a><a class="btn o" href="tel:+542915040322"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 5-2.2 1.5a11 11 0 0 0 5.2 5.2L16 12.5l5 1.5v3a2 2 0 0 1-2 2C10.7 19 5 13.3 5 5a2 2 0 0 1 2-2z"/></svg>291 504-0322</a></div>
-      <div class="mapa"><iframe title="Mapa de Novissimo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-38.710931099999996,-62.25790429999999&z=16&output=embed"></iframe></div></div>
-  </div>
-</section>
-</main>
-<footer><svg class="tiles" aria-hidden="true" preserveAspectRatio="none"><defs><pattern id="maj2" width="88" height="88" patternUnits="userSpaceOnUse">
-<rect width="88" height="88" fill="#fbf8f3"/>
-<g fill="none" stroke="#1f3fa3" stroke-width="2.2">
-<path d="M0 22a22 22 0 0 0 22-22M66 0a22 22 0 0 0 22 22M88 66a22 22 0 0 0-22 22M22 88A22 22 0 0 0 0 66"/>
-<path d="M44 20c6 8 6 16 0 24-6-8-6-16 0-24zM44 68c-6-8-6-16 0-24 6 8 6 16 0 24zM20 44c8-6 16-6 24 0-8 6-16 6-24 0zM68 44c-8 6-16 6-24 0 8-6 16-6 24 0z"/>
-</g>
-<g fill="#1f3fa3"><circle cx="44" cy="44" r="4"/><circle cx="0" cy="0" r="7"/><circle cx="88" cy="0" r="7"/><circle cx="0" cy="88" r="7"/><circle cx="88" cy="88" r="7"/></g>
-<g fill="#f0c24f"><circle cx="44" cy="44" r="1.6"/><circle cx="44" cy="8" r="2.4"/><circle cx="44" cy="80" r="2.4"/><circle cx="8" cy="44" r="2.4"/><circle cx="80" cy="44" r="2.4"/></g>
-</pattern></defs><rect width="100%" height="100%" fill="url(#maj2)"/></svg><div class="wrap pie"><b>Novissimo</b><span>Pastas &amp; Mercado · Hipólito Yrigoyen 728, Bahía Blanca · 291 504-0322</span></div></footer>
-<nav class="barra" aria-label="Accesos rápidos"><a class="a" href="https://wa.me/5492915040322?text=Hola%20Novissimo%21%20Quer%C3%ADa%20encargar%20pasta%20para%20retirar.%0AQu%C3%A9%20quiero%3A%0ACu%C3%A1ndo%20lo%20retiro%3A" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Encargar</a><a href="tel:+542915040322"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 5-2.2 1.5a11 11 0 0 0 5.2 5.2L16 12.5l5 1.5v3a2 2 0 0 1-2 2C10.7 19 5 13.3 5 5a2 2 0 0 1 2-2z"/></svg>Llamar</a><a href="https://www.google.com/maps/search/?api=1&query=Novissimo%20Pastas%2C%20Hip%C3%B3lito%20Yrigoyen%20728%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Llegar</a></nav>
-<script>
+.fx{--f-r:16px;background:var(--fbg);color:var(--ffg);padding:clamp(52px,7vw,92px) 0;border-top:1px solid var(--fline);border-bottom:1px solid var(--fline)}
+.fx .fw{width:min(1080px,100% - 40px);margin-inline:auto;display:grid;gap:30px}
+@media(min-width:900px){.fx .fw{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}}
+.fx h2{margin:0;font:700 clamp(40px,6vw,68px)/.95 var(--fh);font-style:var(--fhs);text-transform:var(--fhc);letter-spacing:-.01em;color:var(--ffg)}
+.fx .fp{margin:16px 0 0;color:var(--fmuted);font-size:17px;max-width:26em}
+.fx .fw>*,.fx .panel>*{min-width:0}
+.fx .panel{min-width:0;background:var(--fcard);border:1px solid var(--fline);border-radius:22px;padding:clamp(18px,3vw,28px);display:grid;gap:18px}
+.fx .lbl{font:600 14px/1 "Txt";color:var(--fmuted);margin:0 0 10px}
+.fx .it{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--fline)}
+.fx .it:last-child{border:0}
+.fx .it b{display:block;font:600 17px/1.2 "Txt"}
+.fx .it small{color:var(--fmuted);font-size:14px}
+.fx .st{display:flex;align-items:center;gap:6px}
+.fx .st button{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--fline);background:transparent;color:var(--ffg);font:600 20px/1 "Txt";cursor:pointer}
+.fx .st button.p{background:var(--facc);border-color:var(--facc);color:var(--faccfg)}
+.fx .st output{min-width:26px;text-align:center;font:700 18px/1 "Txt"}
+.fx .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.fx .chips::-webkit-scrollbar{display:none}
+.fx .chip{flex:0 0 auto;border:1.5px solid var(--fline);background:transparent;color:var(--ffg);border-radius:14px;padding:10px 14px;font:600 15px/1.15 "Txt";cursor:pointer;text-align:center;min-width:64px}
+.fx .chip small{display:block;font-weight:400;font-size:12px;color:var(--fmuted)}
+.fx .chip[aria-pressed=true]{background:var(--facc);border-color:var(--facc);color:var(--faccfg)}
+.fx .chip[aria-pressed=true] small{color:var(--faccfg);opacity:.8}
+.fx .chip:disabled{opacity:.35;cursor:not-allowed}
+.fx .row2{display:grid;gap:14px}
+@media(min-width:600px){.fx .row2{grid-template-columns:1fr 1fr}}
+.fx label.f{display:grid;gap:8px;font:600 14px/1 "Txt";color:var(--fmuted)}
+.fx input,.fx select,.fx textarea{font:400 16px/1.3 "Txt";color:var(--ffg);background:var(--fsoft);border:1.5px solid var(--fline);border-radius:12px;padding:12px 14px;width:100%;box-sizing:border-box}
+.fx textarea{min-height:70px;resize:vertical}
+.fx .go{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:999px;padding:17px 22px;background:var(--facc);color:var(--faccfg);font:700 17px/1 "Txt";cursor:pointer}
+.fx .go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.fx .go[disabled]{opacity:.45;cursor:not-allowed}
+.fx .hint{margin:0;font-size:13px;color:var(--fmuted);text-align:center}
+.fx .sum{font:600 15px/1.3 "Txt"}
+.fx :focus-visible{outline:3px solid var(--facc);outline-offset:2px}
+</style><script data-goatcounter="https://luchovaschetti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head>
+<body><div class="stage"><div class="pitch"><h1>Novissimo Pastas</h1><p>Pasta fresca y mercado italiano. Así se vería tu web en el celular de tus clientes: abrís, pedís o reservás, y te llega el mensaje armado por WhatsApp.</p></div>
+<div class="app"><header class="top"><div class="brand"><b>Novissimo</b><span class="pill" id="estado"><i></i>…</span></div>
+<div class="tabs" role="tablist"><button role="tab" aria-selected="true" aria-controls="p1">Inicio</button><button role="tab" aria-selected="false" aria-controls="p2">Pedir</button><button role="tab" aria-selected="false" aria-controls="p3">Info</button></div></header>
+<main><section class="pane" id="p1"><div class="hi"><h2>Novissimo Pastas</h2><p>Pasta fresca y mercado italiano · Hipólito Yrigoyen 728</p></div><div class="tiles"><button type="button" class="tile" data-go="p2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><b>Pedir</b><small>Por WhatsApp, en un minuto</small></button><button type="button" class="tile" data-go="p3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><b>Dónde y cuándo</b><small>Hipólito Yrigoyen 728</small></button><a class="tile" href="https://www.instagram.com/novissimopastas/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></svg><b>Instagram</b><small>@novissimopastas</small></a></div><div class="hl"><h3>Para tener en cuenta</h3><div><b>Día de ñoquis</b><span>El 29, ñoquis hechos a mano. Encargalos antes.</span></div><div><b>Sorrentinos</b><span>Los más pedidos: calabaza y jamón y queso.</span></div></div></section>
+<section class="pane" id="p2" hidden><section class="fx" id="accion" style="--fbg:#f7f1e6;--ffg:#14234f;--facc:#1f3fa3;--faccfg:#fff;--fline:#e3d8c4;--fmuted:#5a6178;--fcard:#fff;--fsoft:#e9eefb;--fh:&quot;Cnd&quot;;--fhc:uppercase;--fhs:normal" data-cfg='{&quot;mode&quot;: &quot;pedido&quot;, &quot;wa&quot;: &quot;2915040322&quot;, &quot;short&quot;: &quot;Novissimo&quot;, &quot;sched&quot;: {&quot;0&quot;: [[540, 810]], &quot;1&quot;: [[570, 1200]], &quot;2&quot;: [[570, 1200]], &quot;3&quot;: [[570, 1200]], &quot;4&quot;: [[570, 1200]], &quot;5&quot;: [[570, 1200]], &quot;6&quot;: [[570, 1200]]}, &quot;unit&quot;: &quot;porciones&quot;, &quot;exl&quot;: &quot;Salsa&quot;}'><div class="fw"><div><h2>Armá tu pedido</h2><p class="fp">Elegí las pastas y cuántas porciones. Te llega el pedido armado por WhatsApp y te confirmamos cuándo pasar a buscarlo.</p></div><form class="panel" onsubmit="return false"><div><p class="lbl">Elegí (porciones)</p><div class="it" data-k="Sorrentinos"><div><b>Sorrentinos</b><small>Calabaza, jamón y queso o de temporada</small></div><div class="st "><button type="button" class="m" aria-label="Uno menos">−</button><output>0</output><button type="button" class="p" aria-label="Uno más">+</button></div></div><div class="it" data-k="Ravioles"><div><b>Ravioles</b><small>Masa fina, bien rellenos</small></div><div class="st "><button type="button" class="m" aria-label="Uno menos">−</button><output>0</output><button type="button" class="p" aria-label="Uno más">+</button></div></div><div class="it" data-k="Cappellacci"><div><b>Cappellacci</b><small>Espárragos y espinaca, de temporada</small></div><div class="st "><button type="button" class="m" aria-label="Uno menos">−</button><output>0</output><button type="button" class="p" aria-label="Uno más">+</button></div></div><div class="it" data-k="Tortelloni"><div><b>Tortelloni</b><small>Roast beef braseado</small></div><div class="st "><button type="button" class="m" aria-label="Uno menos">−</button><output>0</output><button type="button" class="p" aria-label="Uno más">+</button></div></div><div class="it" data-k="Tallarines"><div><b>Tallarines</b><small>Finos o anchos</small></div><div class="st "><button type="button" class="m" aria-label="Uno menos">−</button><output>0</output><button type="button" class="p" aria-label="Uno más">+</button></div></div><div class="it" data-k="Ñoquis"><div><b>Ñoquis</b><small>Hechos a mano</small></div><div class="st "><button type="button" class="m" aria-label="Uno menos">−</button><output>0</output><button type="button" class="p" aria-label="Uno más">+</button></div></div><div class="it" data-k="Fusilli"><div><b>Fusilli</b><small>Sémola de trigo candeal</small></div><div class="st "><button type="button" class="m" aria-label="Uno menos">−</button><output>0</output><button type="button" class="p" aria-label="Uno más">+</button></div></div></div><label class="f">Salsa<select class="ex"><option>Te recomiendan en el local</option><option>Ragú de hongos</option><option>Pesto</option><option>Sin salsa</option></select></label><div><p class="lbl">¿Cómo lo querés?</p><div class="chips"><button type="button" class="chip" data-modo="Retiro en el local" aria-pressed="true">Paso a buscar</button><button type="button" class="chip" data-modo="Envío a domicilio" aria-pressed="false">Envío a domicilio</button></div></div><label class="f dir" hidden>Dirección<input placeholder="Calle y número"></label><label class="f">¿Para cuándo?<input class="cuando" placeholder="Ej: hoy 20:30"></label><div class="row2"><label class="f">A nombre de<input class="nom" autocomplete="name" placeholder="Tu nombre"></label><label class="f">Algo más<textarea class="nota" placeholder="Opcional"></textarea></label></div><p class="sum"></p><button type="button" class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Enviar pedido por WhatsApp</button><p class="hint">Se abre WhatsApp con el mensaje armado. No se cobra nada desde la web.</p></form></div></section></section>
+<section class="pane" id="p3" hidden><ul class="hrs"><li data-d="1"><span>Lunes</span><span class="">9:30 a 20 h</span></li><li data-d="2"><span>Martes</span><span class="">9:30 a 20 h</span></li><li data-d="3"><span>Miércoles</span><span class="">9:30 a 20 h</span></li><li data-d="4"><span>Jueves</span><span class="">9:30 a 20 h</span></li><li data-d="5"><span>Viernes</span><span class="">9:30 a 20 h</span></li><li data-d="6"><span>Sábado</span><span class="">9:30 a 20 h</span></li><li data-d="0"><span>Domingo</span><span class="">9 a 13:30 h</span></li></ul><div class="mapa"><iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=Hip%C3%B3lito%20Yrigoyen%20728%2C%20Bah%C3%ADa%20Blanca&z=16&output=embed"></iframe></div>
+<div class="tiles" style="margin-top:14px"><a class="tile" href="https://www.google.com/maps/search/?api=1&query=Novissimo%20Pastas%2C%20Hip%C3%B3lito%20Yrigoyen%20728%2C%20Bah%C3%ADa%20Blanca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><b>Cómo llegar</b><small>Abrir en Maps</small></a><a class="tile" href="tel:+542915040322"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg><b>Llamar</b><small>291 504-0322</small></a></div></section></main>
+<div class="cta"><a href="https://wa.me/5492915040322?text=Hola%20Novissimo%21%20Quer%C3%ADa%20hacer%20una%20consulta." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Escribinos por WhatsApp</a></div></div></div>
+<div class="demo">Versión de muestra</div><script>
 (function(){
   var S={"0": [[540, 810]], "1": [[570, 1200]], "2": [[570, 1200]], "3": [[570, 1200]], "4": [[570, 1200]], "5": [[570, 1200]], "6": [[570, 1200]]}, el=document.getElementById('estado'), root=document.documentElement;
   var hm=function(m){m%=1440;var h=Math.floor(m/60),mm=m%60;return h+(mm?':'+String(mm).padStart(2,'0'):'')+' h'};
@@ -212,14 +108,47 @@ footer b{font:700 28px/1 "Cnd";letter-spacing:.04em;color:var(--azul);text-trans
   var prev=(day+6)%7, open=null;
   S[day].forEach(function(r){if(now>=r[0]&&now<r[1])open=r[1]});
   S[prev].forEach(function(r){if(r[1]>1440&&now<r[1]-1440)open=r[1]});
-  if(open!==null){root.classList.add('abierto');el.innerHTML='<i></i>Abierto ahora <span>· hasta las '+hm(open)+'</span>';}
+  if(open!==null){root.classList.add('abierto');var full=S[day].some(function(r){return r[0]===0&&r[1]>=1440});el.innerHTML='<i></i>Abierto ahora <span>· '+(full?'las 24 horas':'hasta las '+hm(open))+'</span>';}
   else{root.classList.add('cerrado');var t=null;
     S[day].forEach(function(r){if(t===null&&now<r[0])t='hoy a las '+hm(r[0])});
     if(t===null){for(var k=1;k<8;k++){var d=(day+k)%7;if(S[d].length){t=(k===1?'mañana':'el '+D[d])+' a las '+hm(S[d][0][0]);break;}}}
     el.innerHTML='<i></i>Cerrado ahora <span>· abre '+t+'</span>';}
   var li=document.querySelector('.horas li[data-d="'+day+'"]');if(li)li.classList.add('hoy');
 })();
-</script>
-<script data-goatcounter="https://luchovaschetti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
-</html>
+</script><script>
+(function(){document.querySelectorAll('.fx').forEach(function(fx){
+var D=JSON.parse(fx.getAttribute('data-cfg'));var q=function(s){return fx.querySelector(s)};
+var dias=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+function hm(m){m=m%1440;var h=Math.floor(m/60),mi=m%60;return h+':'+(mi<10?'0':'')+mi}
+if(D.mode==='pedido'){
+ var qty={};fx.querySelectorAll('.it').forEach(function(r){var k=r.getAttribute('data-k');qty[k]=0;var o=r.querySelector('output');
+  r.querySelector('.m').onclick=function(){qty[k]=Math.max(0,qty[k]-1);o.textContent=qty[k];upd()};
+  r.querySelector('.p').onclick=function(){qty[k]++;o.textContent=qty[k];upd()}});
+ var modo='Retiro en el local';fx.querySelectorAll('[data-modo]').forEach(function(b){b.onclick=function(){modo=b.getAttribute('data-modo');fx.querySelectorAll('[data-modo]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});q('.dir').hidden=modo.indexOf('Env')<0}});
+ function upd(){var n=0;for(var k in qty)n+=qty[k];q('.go').disabled=!n;q('.sum').textContent=n?('Tu pedido: '+n+' '+D.unit):'Todavía no elegiste nada'}
+ q('.go').onclick=function(){var l=[];for(var k in qty)if(qty[k])l.push('• '+qty[k]+' '+k);
+  var t='Hola '+D.short+'! Quiero hacer este pedido:\n'+l.join('\n');var ex=q('.ex');if(ex)t+='\n'+D.exl+': '+ex.value;
+  t+='\n\n'+modo;if(modo.indexOf('Env')>=0&&q('.dir input').value)t+=': '+q('.dir input').value;
+  var cu=q('.cuando').value;if(cu)t+='\nPara: '+cu;var no=q('.nom').value;if(no)t+='\nA nombre de: '+no;var nt=q('.nota').value;if(nt)t+='\nNota: '+nt;
+  window.open('https://wa.me/549'+D.wa+'?text='+encodeURIComponent(t),'_blank')};upd();
+}else{
+ var now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Argentina/Buenos_Aires'}));var sel=null,hora=null,pers=2;
+ var cd=q('.dsel');for(var i=0;i<10;i++){(function(i){var d=new Date(now);d.setDate(now.getDate()+i);var r=D.sched[d.getDay()]||[];
+  var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed','false');
+  b.innerHTML=(i===0?'Hoy':i===1?'Mañana':dias[d.getDay()].slice(0,3).replace(/^./,function(c){return c.toUpperCase()}))+'<small>'+d.getDate()+'/'+(d.getMonth()+1)+'</small>';
+  if(!r.length){b.disabled=true;b.title='Cerrado'}
+  b.onclick=function(){sel={d:d,r:r,i:i};cd.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b)});horas()};cd.appendChild(b)})(i)}
+ function horas(){var ch=q('.hrsel');ch.innerHTML='';hora=null;var nm=now.getHours()*60+now.getMinutes();
+  sel.r.forEach(function(rg){for(var m=Math.ceil(rg[0]/30)*30;m<=rg[1]-60;m+=30){if(sel.i===0&&m<nm+30)continue;(function(m){var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed','false');b.textContent=hm(m);
+   b.onclick=function(){hora=hm(m);ch.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b)});upd()};ch.appendChild(b)})(m)}});
+  if(!ch.children.length)ch.innerHTML='<p class="hint" style="text-align:left">No quedan horarios para ese día.</p>';upd()}
+ var po=q('.pers output');q('.pers .m').onclick=function(){pers=Math.max(1,pers-1);po.textContent=pers;upd()};q('.pers .p').onclick=function(){pers=Math.min(30,pers+1);po.textContent=pers;upd()};
+ function upd(){q('.go').disabled=!(sel&&hora);q('.sum').textContent=sel&&hora?(dias[sel.d.getDay()]+' '+sel.d.getDate()+'/'+(sel.d.getMonth()+1)+' a las '+hora+' · '+pers+(pers>1?' personas':' persona')):'Elegí día y horario'}
+ q('.go').onclick=function(){var t='Hola '+D.short+'! Quiero reservar una mesa.\nDía: '+dias[sel.d.getDay()]+' '+sel.d.getDate()+'/'+(sel.d.getMonth()+1)+'\nHora: '+hora+'\nSomos: '+pers;
+  var no=q('.nom').value;if(no)t+='\nA nombre de: '+no;var nt=q('.nota').value;if(nt)t+='\nNota: '+nt;
+  window.open('https://wa.me/549'+D.wa+'?text='+encodeURIComponent(t),'_blank')};upd();
+}})})();
+
+document.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected',x===b)});document.querySelectorAll('.pane').forEach(function(p){p.hidden=p.id!==b.getAttribute('aria-controls')})}});
+document.querySelectorAll('[data-go]').forEach(function(a){a.onclick=function(){document.querySelector('.tabs [aria-controls='+a.getAttribute('data-go')+']').click();window.scrollTo(0,0)}});
+</script></body></html>
